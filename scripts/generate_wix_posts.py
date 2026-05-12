@@ -338,8 +338,7 @@ def render_publicaciones_por_rubro(manifest: list[dict]) -> str:
                 d = escape(obj.get("date") or "")
                 t = escape(obj["title"])
                 href = escape(f"publicaciones/wix/{obj['file']}")
-                lines.append('          <article class="paper pub-card pub-card--migrated">')
-                lines.append('            <p class="pub-migrated-tag">Blog migrado desde Wix</p>')
+                lines.append('          <article class="paper pub-card">')
                 lines.append(f"            <h3>{t}</h3>")
                 lines.append(f'            <time class="pub-date" datetime="{d}">{d}</time>')
                 lines.append(f'            <a class="btn-read" href="{href}">Leer artículo</a>')
@@ -421,7 +420,6 @@ def page_template(
     iso_date: str,
     long_date: str,
     body_html: str,
-    wix_url: str,
     canonical_path: str,
 ) -> str:
     canon = f"https://www.miguelmarengocanales.com{canonical_path}"
@@ -443,7 +441,7 @@ def page_template(
     <meta property="og:url" content="{canon}" />
     <link rel="canonical" href="{canon}" />
     <link rel="stylesheet" href="/site.css" />
-    <title>{esc_title} — Blog (migrado desde Wix)</title>
+    <title>{esc_title} — Publicaciones técnicas</title>
     <script type="application/ld+json">
 {json.dumps(
         {
@@ -477,21 +475,13 @@ def page_template(
         <h1>{esc_title}</h1>
         <p class="tagline">
           Publicado el <time datetime="{iso_date[:10]}">{long_date}</time>
-          · Texto migrado desde el blog en Wix
         </p>
       </header>
       <article class="paper content">
-        <p class="notice">
-          <strong>Nota de procedencia:</strong> este artículo se publicó originalmente en
-          <a href="{escape(wix_url)}">miguelmarengo1.wixsite.com</a>. Aquí conservas una copia bajo tu dominio;
-          la versión histórica en Wix puede diferir ligeramente en formato o imágenes.
-        </p>
         {body_html}
       </article>
       <footer class="doc-foot">
         <p>
-          <a href="{escape(wix_url)}">Ver entrada original en Wix</a>
-          ·
           <a href="../../publicaciones.html">Índice de publicaciones</a>
         </p>
       </footer>
@@ -530,7 +520,6 @@ def main() -> None:
             iso_date=iso or "1970-01-01T00:00:00.000Z",
             long_date=long_d,
             body_html=body_html,
-            wix_url=wix_url,
             canonical_path=canonical,
         )
         path.write_text(page, encoding="utf-8")
