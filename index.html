@@ -21,7 +21,7 @@
       property="og:description"
       content="Trayectoria técnica en modelado, ingeniería de software y logística. Documento de transparencia con análisis pericial de hechos públicos."
     />
-    <meta property="article:modified_time" content="2026-05-11" />
+    <meta property="article:modified_time" content="2026-05-12" />
 
     <link rel="canonical" href="https://miguelmarengocanales.vercel.app/" />
 
@@ -84,6 +84,98 @@
 
       .site-nav a:hover {
         background: var(--accent-soft);
+      }
+
+      .site-nav a.nav-muted {
+        font-weight: 500;
+        color: var(--muted);
+      }
+
+      .site-nav a.nav-muted:hover {
+        color: var(--accent);
+      }
+
+      .toc-box {
+        margin: 1rem 0 1.35rem;
+        padding: 0.85rem 1rem;
+        background: var(--accent-soft);
+        border-radius: 10px;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        font-size: 0.9rem;
+      }
+
+      .toc-box strong {
+        display: block;
+        margin-bottom: 0.45rem;
+        color: var(--text);
+      }
+
+      .toc-box ul {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .toc-box li {
+        margin-bottom: 0.3rem;
+      }
+
+      .exec-summary {
+        margin: 0 0 1.25rem;
+        padding: 1rem 1.1rem;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        font-family: system-ui, sans-serif;
+        font-size: 0.92rem;
+      }
+
+      .exec-summary h4 {
+        margin: 0 0 0.55rem;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .exec-summary ol {
+        margin: 0;
+        padding-left: 1.2rem;
+      }
+
+      .exec-summary li {
+        margin-bottom: 0.4rem;
+      }
+
+      .criteria {
+        margin-top: 1.5rem;
+        padding-top: 1.15rem;
+        border-top: 1px dashed var(--border);
+      }
+
+      .criteria h4 {
+        margin: 0 0 0.5rem;
+        font-family: system-ui, sans-serif;
+        font-size: 0.95rem;
+        font-weight: 650;
+      }
+
+      .criteria dl {
+        margin: 0;
+        font-size: 0.96rem;
+      }
+
+      .criteria dt {
+        margin-top: 0.65rem;
+        font-weight: 700;
+        font-family: system-ui, sans-serif;
+        color: var(--text);
+      }
+
+      .criteria dd {
+        margin: 0.2rem 0 0;
+        padding: 0;
+        color: var(--muted);
       }
 
       .wrap {
@@ -269,6 +361,7 @@
     <nav class="site-nav" aria-label="Secciones principales">
       <a href="#perfil">Trayectoria técnica</a>
       <a href="#transparencia">Transparencia y aclaraciones públicas</a>
+      <a href="#criterios-verificacion" class="nav-muted" title="Criterios y tono fact-checking">Fact-checking</a>
     </nav>
 
     <div class="wrap">
@@ -319,6 +412,31 @@
           permite.
         </p>
 
+        <h3>Ciclo de vida de una intervención técnica</h3>
+        <p>
+          El trabajo suele seguir una secuencia auditable: <strong>diagnóstico cuantitativo</strong>
+          (baseline, fugas de servicio, cuellos de botella), <strong>diseño de modelo</strong>
+          (hipótesis explícitas), <strong>implementación controlada</strong> (piloto, roll‑out),
+          <strong>medición de efecto</strong> (KPI antes/después) y <strong>mejora continua</strong>. Ese
+          ciclo separa el relato de los resultados.
+        </p>
+
+        <h3>Datos: calidad, gobernanza y reproducibilidad</h3>
+        <p>
+          Sin datos limpios y trazables, el mejor algoritmo produce conclusiones frágiles. Me enfoco en
+          <strong>linaje de datos</strong> (origen, transformaciones), reglas de validación y acuerdos de
+          custodia: quién puede ver qué, con qué retention y bajo qué políticas —siempre dentro de marcos
+          legales aplicables.
+        </p>
+
+        <h3>Colaboración con equipos técnicos y de negocio</h3>
+        <p>
+          Los proyectos exitosos alinean lenguaje: el área de negocio define restricciones reales y el equipo
+          técnico traduce a formalismo matemático y código. Mi rol habitúa ser el de <strong>puente</strong>:
+          traducir incertidumbre de negocio en especificaciones, criterios de aceptación y tableros que no
+          confundan correlación con causalidad.
+        </p>
+
         <h3>Ética profesional y cumplimiento</h3>
         <p>
           Los sistemas que diseño se orientan al marco legal y fiscal vigente; la ingeniería y las finanzas
@@ -339,19 +457,48 @@
         <span class="pill" style="margin-top: 0">Documento de transparencia</span>
         <h2 id="transparencia-heading" class="pericial-title">Transparencia y aclaraciones públicas</h2>
         <p class="pericial-sub">
-          Apartado fijo de verificación de hechos y contexto. Redacción en formato de
-          <strong>análisis técnico‑financiero‑mediático</strong>, sin sustituir resolutiones judiciales ni
+          Apartado fijo de verificación de hechos y contexto (enfoque
+          <strong>fact‑checking documental</strong>). Redacción en formato de
+          <strong>análisis técnico‑financiero‑mediático</strong>, sin sustituir resoluciones judiciales ni
           auditorías formales de autoridad.
         </p>
 
         <div class="paper pericial">
+          <div class="exec-summary">
+            <h4>Resumen ejecutivo</h4>
+            <ol>
+              <li>
+                <strong>Imputaciones mediáticas puntuales</strong> no deben interpretarse como evidencia
+                técnica sin contraste con documentación y cronología.
+              </li>
+              <li>
+                <strong>Caso cobertura / ISSSTE:</strong> labor declarada como estrictamente técnica; análisis
+                de alineación temporal con eventos políticos públicos.
+              </li>
+              <li>
+                <strong>Caso listados financieros:</strong> reclasificación necesaria de pagos atribuidos a
+                arrendamiento licito con título fiscal, frente a lecturas agregadas de listados.
+              </li>
+            </ol>
+          </div>
+
+          <div class="toc-box">
+            <strong>Índice del documento</strong>
+            <ul>
+              <li><a href="#caso-indice">Caso 1 — Índice Político e ISSSTE (línea de tiempo)</a></li>
+              <li><a href="#caso-puga">Caso 2 — Lista Álvarez Puga y arrendamiento Reforma 250</a></li>
+              <li><a href="#solicitudes">Solicitudes a medios y plataformas</a></li>
+              <li><a href="#criterios-verificacion">Criterios de verificación aplicados en este texto</a></li>
+            </ul>
+          </div>
+
           <div class="notice" role="note">
             <strong>Alcance.</strong> Lo que sigue organiza <strong>hechos que sustento</strong>,
             <strong>cronología</strong> y <strong>hipótesis de sesgo informativo</strong> frente a narrativas
             incompletas. No constituye dictamen pericial de un colegio ni sentencia.
           </div>
 
-          <h3>Caso 1 — Menciones en «Índice Político» y el ISSSTE (línea de tiempo)</h3>
+          <h3 id="caso-indice">Caso 1 — Menciones en «Índice Político» y el ISSSTE (línea de tiempo)</h3>
           <p>
             Sobre las menciones históricas en <strong>Índice Político</strong> y el <strong>ISSSTE</strong>: mi
             participación fue <strong>estrictamente técnica</strong>, aportando soluciones como
@@ -372,7 +519,7 @@
             aislada atribuible a mi desempeño documentado.
           </p>
 
-          <h3>Caso 2 — Listados en torno a Álvarez Puga y cifra de 1.2&nbsp;millones (arrendamiento Reforma&nbsp;250)</h3>
+          <h3 id="caso-puga">Caso 2 — Listados en torno a Álvarez Puga y cifra de 1.2&nbsp;millones (arrendamiento Reforma&nbsp;250)</h3>
           <p>
             Los reportajes que reproducen listas provenientes de filtraciones de auditoría pueden
             <strong>mezclar flujos contables</strong> con la <strong>naturaleza jurídica real</strong> del
@@ -402,7 +549,7 @@
             </li>
           </ul>
 
-          <h3>Solicitudes a medios y plataformas</h3>
+          <h3 id="solicitudes">Solicitudes a medios y plataformas</h3>
           <p>
             Solicito que toda nueva cobertura que cite listas o auditorías integre
             <strong>contrato de arrendamiento</strong>, comprobantes fiscales y evidencia de uso del inmueble,
@@ -410,13 +557,34 @@
             <strong>conflictos de interés</strong> cuando la línea editorial involucre actores con historial
             público de enfrentamiento político en el eje Gordillo–Yunes.
           </p>
+
+          <div class="criteria" id="criterios-verificacion">
+            <h4>Criterios de verificación aplicados en este texto</h4>
+            <dl>
+              <dt>Trazabilidad</dt>
+              <dd>
+                Separación explícita entre hechos sustentados, inferencias temporales y lectura de sesgo
+                mediático.
+              </dd>
+              <dt>Consistencia financiera</dt>
+              <dd>
+                Contraste de magnitudes con el <strong>título jurídico</strong> que ampara el flujo (arrendamiento
+                vs. otros conceptos).
+              </dd>
+              <dt>Neutralidad de tono</dt>
+              <dd>
+                Se evita lenguaje coloquial o calificativos personales; se privilegian términos analíticos
+                (“contrato”, “IVA”, “cronología”, “lista agregada”).
+              </dd>
+            </dl>
+          </div>
         </div>
       </section>
 
       <footer class="doc-foot">
         <p>
           Última actualización del sitio:
-          <time datetime="2026-05-11">11 de mayo de 2026</time>.
+          <time datetime="2026-05-12">12 de mayo de 2026</time>.
           Conservar copia fechada y URL canónica para trazabilidad.
         </p>
       </footer>
