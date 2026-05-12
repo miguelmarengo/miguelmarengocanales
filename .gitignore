@@ -1,2 +1,6 @@
 .vercel
 .DS_Store
+.vendor/
+__pycache__/
+*.pyc
+.wix-*.html

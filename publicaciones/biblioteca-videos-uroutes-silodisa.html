@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050810" />    <link rel="preload" href="/site.css" as="style" />
+    <meta
+      name="description"
+      content="Biblioteca de video uRoutes tomada de Silodisa: introducción, ecosistema, WMS, TMS y CRM — con reproductor y enlace canónico al sitio de Silodisa."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Miguel Marengo Canales" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="Biblioteca de video uRoutes (Silodisa) — reproductores y contexto" />
+    <meta
+      property="og:description"
+      content="Clips formativos del ecosistema uRoutes: mismos títulos y textos que la biblioteca pública de Silodisa, con embed y enlace al origen."
+    />
+    <meta property="article:modified_time" content="2026-05-12" />
+    <meta property="og:url" content="https://www.miguelmarengocanales.com/publicaciones/biblioteca-videos-uroutes-silodisa.html" />
+
+    <link rel="canonical" href="https://www.miguelmarengocanales.com/publicaciones/biblioteca-videos-uroutes-silodisa.html" />
+    <link rel="stylesheet" href="/site.css" />
+
+    <title>Biblioteca de video uRoutes (Silodisa) — Miguel Marengo Canales</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Biblioteca de video uRoutes (Silodisa)",
+        "url": "https://www.miguelmarengocanales.com/publicaciones/biblioteca-videos-uroutes-silodisa.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.miguelmarengocanales.com/#website",
+          "name": "Miguel Marengo Canales",
+          "url": "https://www.miguelmarengocanales.com/"
+        },
+        "inLanguage": "es-MX",
+        "description": "Reproducción embebida y resúmenes alineados a la biblioteca de video pública de Silodisa."
+      }
+    </script>
+  </head>
+  <body class="page-publicaciones">
+    <nav class="site-nav" aria-label="Menú principal">
+      <a href="../index.html">Inicio</a>
+      <a href="../publicaciones.html" aria-current="page">Publicaciones técnicas</a>
+      <a href="../transparencia.html">Transparencia y aclaraciones</a>
+      <a href="../transparencia.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
+    </nav>
+
+    <main class="wrap">
+      <p class="pub-back">
+        <a href="../publicaciones.html">← Índice de publicaciones técnicas</a>
+      </p>
+
+      <header class="hero pub-article-hero" id="top">
+        <h1>Biblioteca de video uRoutes (Silodisa)</h1>
+        <p class="tagline">
+          Textos y títulos tomados de la biblioteca pública en
+          <a href="https://www.silodisa.com/es/videos">silodisa.com/es/videos</a>. Silodisa no expone un blog aparte:
+          estos clips son la pieza central de divulgación en vídeo. Debajo tienes el mismo contenido con reproductor
+          embebido y enlace directo al ancla oficial en Silodisa.
+        </p>
+      </header>
+
+      <nav class="paper pub-toc" aria-label="Índice de videos">
+        <h2 class="pub-toc-title">Índice (17 videos)</h2>
+        <ol class="pub-toc-list">
+          <li><a href="#video-introduccion">1. Logística que acelera tu futuro</a></li>
+          <li><a href="#video-uroutes-ecosistema-once-modulos">2. Synthesia — Un solo operador. Once módulos. Una sola verdad.</a></li>
+          <li><a href="#video-uroutes-admin-web">3. uRoutes Admin — El gobierno de toda la plataforma</a></li>
+          <li><a href="#video-uroutes-auditoria-documentos">4. uRoutes — Auditoría de documentos</a></li>
+          <li><a href="#video-uroutes-putaway-inteligente-3d">5. uRoutes Putaway Inteligente 3D — La bodega eficiente empieza en la puerta correcta</a></li>
+          <li><a href="#video-uroutes-torre-control-wms">6. uRoutes Torre de Control WMS — El pulso de tu bodega en un solo lugar</a></li>
+          <li><a href="#video-uroutes-mobility-conteos-transferencias">7. uRoutes Mobility Conteos y Transferencias — El inventario exacto empieza en el escaneo</a></li>
+          <li><a href="#video-uroutes-mobility-inventario-tienda">8. uRoutes Mobility Inventario en Tienda — El inventario confiable llega hasta el punto de venta</a></li>
+          <li><a href="#video-uroutes-cliente-portal-almacen">9. uRoutes Cliente Portal de Almacén — Tu cliente ve su inventario sin llamarte</a></li>
+          <li><a href="#video-uroutes-motor-de-rutas">10. uRoutes Motor de Rutas — Diez mil destinos optimizados antes de encender el primer motor</a></li>
+          <li><a href="#video-uroutes-mobility-entregas">11. uRoutes Mobility Entregas — El registro más completo de la última milla</a></li>
+          <li><a href="#video-uroutes-portal-entregas-tms">12. uRoutes Portal de Entregas — La torre de control de tu distribución en tiempo real</a></li>
+          <li><a href="#video-uroutes-cliente-portal-entregas-crm">13. uRoutes Cliente Portal de Entregas — Tu cliente ve sus pedidos sin llamar al call center</a></li>
+          <li><a href="#video-bodega">14. Bodega — cómo operamos tu almacén</a></li>
+          <li><a href="#video-router-conteos-transferencias">15. Router web — conteos y transferencias</a></li>
+          <li><a href="#video-uroutes-distribucion">16. uRoutes Distribución — cómo calculamos tus rutas</a></li>
+          <li><a href="#video-uroutes-mobility-app-chofer">17. uRoutes Mobility — App del chofer (v1)</a></li>
+        </ol>
+      </nav>
+
+      <section class="paper pub-video-block content" id="video-introduccion" aria-labelledby="vid-1-h">
+        <h2 id="vid-1-h">1. Logística que acelera tu futuro</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Resumen de qué hacemos: almacén, distribución y software propio en un solo hilo de datos.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-introduccion">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: Logística que acelera tu futuro">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/e22a647a-80a2-4691-8f3e-6db462fbaae5?autoplay=false"
+            title="Logística que acelera tu futuro"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-ecosistema-once-modulos" aria-labelledby="vid-2-h">
+        <h2 id="vid-2-h">2. Synthesia — Un solo operador. Once módulos. Una sola verdad.</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Panorama narrativo del HUB uRoutes: un único acceso, once aplicaciones de producto y el mismo hilo de datos entre administración, bodega, transporte y portal al cliente.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-ecosistema-once-modulos">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: Synthesia — Un solo operador. Once módulos. Una sola verdad.">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/63cf22de-7c7e-420b-b075-485df1d983c7?autoplay=false"
+            title="Synthesia — Un solo operador. Once módulos. Una sola verdad."
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-admin-web" aria-labelledby="vid-3-h">
+        <h2 id="vid-3-h">3. uRoutes Admin — El gobierno de toda la plataforma</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Administración Web sobre Firebase/Firestore: altas de empresas y usuarios, roles, bitácoras y gobierno multi-tenant del ecosistema.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-admin-web">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Admin — El gobierno de toda la plataforma">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/63c43bb0-ab25-4adc-b9de-62e36288a62b?autoplay=false"
+            title="uRoutes Admin — El gobierno de toda la plataforma"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-auditoria-documentos" aria-labelledby="vid-4-h">
+        <h2 id="vid-4-h">4. uRoutes — Auditoría de documentos</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Cumplimiento sobre metadatos y nombres (sin leer el contenido de archivos), interfaz FastAPI y login alineado al resto de uRoutes.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-auditoria-documentos">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes — Auditoría de documentos">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/53e7cbef-19c9-402b-878b-8778b3bdf3ea?autoplay=false"
+            title="uRoutes — Auditoría de documentos"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-putaway-inteligente-3d" aria-labelledby="vid-5-h">
+        <h2 id="vid-5-h">5. uRoutes Putaway Inteligente 3D — La bodega eficiente empieza en la puerta correcta</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Analítica de bodega: histórico de movimientos, ABC, caducidades, Smart Putaway, mapas de calor y recomendaciones de ubicación con vista 3D cuando el despliegue la incluye.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-putaway-inteligente-3d">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Putaway Inteligente 3D — La bodega eficiente empieza en la puerta correcta">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/d8fb3da8-5b8a-4552-9fe0-ce841ce5c3bb?autoplay=false"
+            title="uRoutes Putaway Inteligente 3D — La bodega eficiente empieza en la puerta correcta"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-torre-control-wms" aria-labelledby="vid-6-h">
+        <h2 id="vid-6-h">6. uRoutes Torre de Control WMS — El pulso de tu bodega en un solo lugar</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Tableros Flask sobre MySQL: KPI por sede, pulso operativo de la bodega y APIs de consulta sobre la base operativa de inventario.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-torre-control-wms">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Torre de Control WMS — El pulso de tu bodega en un solo lugar">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/8788cf29-d3ab-435a-b5ef-1d55c787f71c?autoplay=false"
+            title="uRoutes Torre de Control WMS — El pulso de tu bodega en un solo lugar"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-mobility-conteos-transferencias" aria-labelledby="vid-7-h">
+        <h2 id="vid-7-h">7. uRoutes Mobility Conteos y Transferencias — El inventario exacto empieza en el escaneo</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">App Android en piso: escaneo de HU y ubicaciones, transferencias guiadas, conteos cíclicos y trazabilidad por movimiento para IRA.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-mobility-conteos-transferencias">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Mobility Conteos y Transferencias — El inventario exacto empieza en el escaneo">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/997dba72-69f6-4730-b1b5-28f557af02b6?autoplay=false"
+            title="uRoutes Mobility Conteos y Transferencias — El inventario exacto empieza en el escaneo"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-mobility-inventario-tienda" aria-labelledby="vid-8-h">
+        <h2 id="vid-8-h">8. uRoutes Mobility Inventario en Tienda — El inventario confiable llega hasta el punto de venta</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Node.js y Capacitor: stock local con SQLite, alertas, estadísticas y APIs REST para alinear tienda con CEDIS sin planillas paralelas.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-mobility-inventario-tienda">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Mobility Inventario en Tienda — El inventario confiable llega hasta el punto de venta">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/013b5cc4-c923-4af9-af0e-57b3bf7bf156?autoplay=false"
+            title="uRoutes Mobility Inventario en Tienda — El inventario confiable llega hasta el punto de venta"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-cliente-portal-almacen" aria-labelledby="vid-9-h">
+        <h2 id="vid-9-h">9. uRoutes Cliente Portal de Almacén — Tu cliente ve su inventario sin llamarte</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Portal web de solo lectura: inventario, recepciones, embarques y mapa de calor multi-sede para la marca sin exponer transacciones sensibles.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-cliente-portal-almacen">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Cliente Portal de Almacén — Tu cliente ve su inventario sin llamarte">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/01d4f44d-bc78-46d9-852f-6ac211f121e3?autoplay=false"
+            title="uRoutes Cliente Portal de Almacén — Tu cliente ve su inventario sin llamarte"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-motor-de-rutas" aria-labelledby="vid-10-h">
+        <h2 id="vid-10-h">10. uRoutes Motor de Rutas — Diez mil destinos optimizados antes de encender el primer motor</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Del pedido al plan: importación, optimización CVRPTW, mapa interactivo, ajuste manual y autorización del itinerario hacia Mobility y torre.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-motor-de-rutas">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Motor de Rutas — Diez mil destinos optimizados antes de encender el primer motor">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/99923d55-6ca3-40ab-8a4a-1e7ac4ade02f?autoplay=false"
+            title="uRoutes Motor de Rutas — Diez mil destinos optimizados antes de encender el primer motor"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-mobility-entregas" aria-labelledby="vid-11-h">
+        <h2 id="vid-11-h">11. uRoutes Mobility Entregas — El registro más completo de la última milla</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Última milla en Android: itinerario, POD, incidencias, gastos, SOS y sincronización offline-first con Firestore y torre de control.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-mobility-entregas">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Mobility Entregas — El registro más completo de la última milla">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/0da4cb39-f2ea-4e77-81e9-4ec6f6a4da63?autoplay=false"
+            title="uRoutes Mobility Entregas — El registro más completo de la última milla"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-portal-entregas-tms" aria-labelledby="vid-12-h">
+        <h2 id="vid-12-h">12. uRoutes Portal de Entregas — La torre de control de tu distribución en tiempo real</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Tablero FastAPI + Firestore en solo lectura: mapa vivo, capas autorizado/liquidado, POF, plan vs real y exportaciones para finanzas.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-portal-entregas-tms">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Portal de Entregas — La torre de control de tu distribución en tiempo real">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/e12bcd65-7699-464d-843b-d939724080ac?autoplay=false"
+            title="uRoutes Portal de Entregas — La torre de control de tu distribución en tiempo real"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-cliente-portal-entregas-crm" aria-labelledby="vid-13-h">
+        <h2 id="vid-13-h">13. uRoutes Cliente Portal de Entregas — Tu cliente ve sus pedidos sin llamar al call center</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">React/Vite para el cliente final: estado de pedidos y entregas, evidencias y POF orientados a marca, sin capa de costos ni torre operativa completa.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-cliente-portal-entregas-crm">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Cliente Portal de Entregas — Tu cliente ve sus pedidos sin llamar al call center">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/494c400f-75b0-4f2f-8dec-6c44a14b001f?autoplay=false"
+            title="uRoutes Cliente Portal de Entregas — Tu cliente ve sus pedidos sin llamar al call center"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-bodega" aria-labelledby="vid-14-h">
+        <h2 id="vid-14-h">14. Bodega — cómo operamos tu almacén</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Recorre en pocos minutos cómo integramos piso, rack, inventario y WMS uRoutes en un CEDIS Silodisa: disciplina operativa, visibilidad y trazabilidad sin improvisar.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-bodega">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: Bodega — cómo operamos tu almacén">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/5732b9a4-8ab6-4ef4-9e79-8c1cb016f401?autoplay=false"
+            title="Bodega — cómo operamos tu almacén"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-router-conteos-transferencias" aria-labelledby="vid-15-h">
+        <h2 id="vid-15-h">15. Router web — conteos y transferencias</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Así se gobiernan desde uRoutes los conteos de inventario y las transferencias entre ubicaciones desde el navegador: mismo sistema que en piso con Mobility, con reglas claras y trazabilidad por movimiento.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-router-conteos-transferencias">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: Router web — conteos y transferencias">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/3daa0f70-c364-4a1e-9589-c80e3c6014ab?autoplay=false"
+            title="Router web — conteos y transferencias"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-distribucion" aria-labelledby="vid-16-h">
+        <h2 id="vid-16-h">16. uRoutes Distribución — cómo calculamos tus rutas</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Cómo pasamos de pedidos y destinos a planes ejecutables, con optimización seria (OR-Tools), restricciones reales y costos por entrega transparentes. Si contratas distribución con Silodisa, aquí ves el cerebro del ruteo.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-distribucion">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Distribución — cómo calculamos tus rutas">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/23c9c629-3731-4b9e-a6b6-cccdf6809554?autoplay=false"
+            title="uRoutes Distribución — cómo calculamos tus rutas"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+      <section class="paper pub-video-block content" id="video-uroutes-mobility-app-chofer" aria-labelledby="vid-17-h">
+        <h2 id="vid-17-h">17. uRoutes Mobility — App del chofer (v1)</h2>
+        <p class="pub-video-meta">
+          <span class="pub-date">Formato breve · ~2 min</span>
+          · Origen:
+          <a href="https://www.silodisa.com/es/videos">Biblioteca de video Silodisa</a>
+          (los metadatos públicos no incluyen fecha de publicación por clip).
+        </p>
+        <p class="lead">Así ejecuta el chofer en campo lo que el TMS planea: rutas y paradas, evidencia fotográfica, firma y seguimiento, alineado con torre de control y liquidación de entregas.</p>
+        <p class="pub-video-actions">
+          <a class="btn-read btn-read--ghost" href="https://www.silodisa.com/es/videos#video-uroutes-mobility-app-chofer">Abrir el mismo clip en Silodisa.com</a>
+        </p>
+        <div class="video-embed-wrap" role="region" aria-label="Reproductor: uRoutes Mobility — App del chofer (v1)">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/da874d3b-5a82-4f50-8f4f-a6baea9e3475?autoplay=false"
+            title="uRoutes Mobility — App del chofer (v1)"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </section>
+
+      <footer class="doc-foot">
+        <p>
+          Origen de metadatos: Silodisa, S.A.P.I. de C.V. · Reproductores Synthesia embebidos según URL pública.
+          <a href="../publicaciones.html">← Índice de publicaciones</a>
+          ·
+          <a href="../index.html">Inicio</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
