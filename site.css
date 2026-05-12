@@ -447,6 +447,133 @@ strong {
   margin-bottom: 0.55rem;
 }
 
+/* Documentos visibles — Transparencia (PDF + comprobantes) */
+.evidencias-publicas {
+  margin: 1rem 0 0;
+}
+
+.evidencias-publicas-title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.12rem);
+  font-weight: 700;
+  color: var(--accent-bright);
+}
+
+.evidencias-publicas-title--spaced {
+  margin-top: 2rem;
+}
+
+.evidencias-actions {
+  margin: 0 0 1rem;
+}
+
+.pdf-embed-wrap {
+  margin: 0 0 1rem;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  background: rgba(15, 23, 42, 0.92);
+}
+
+.pdf-embed-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 72vh;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .pdf-embed-wrap iframe {
+    min-height: 52vh;
+  }
+}
+
+.evidencia-nota-app {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 0.35rem;
+}
+
+.evidencia-card {
+  margin: 0 0 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+  background: #f8fafc;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.22);
+}
+
+.evidencia-card figcaption {
+  padding: 0.65rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 650;
+  color: #0f172a;
+  background: #f1f5f9;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.evidencia-card__link {
+  display: block;
+  line-height: 0;
+}
+
+.evidencia-card__link:focus-visible {
+  outline: 3px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+
+.evidencia-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.evidencia-meta {
+  margin: 0 0 1.35rem;
+  padding: 1rem 1.15rem;
+  background: rgba(15, 23, 42, 0.58);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-family: var(--font-sans);
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.evidencia-meta strong {
+  color: var(--text);
+}
+
+.evidencia-meta ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.evidencia-meta li {
+  margin-bottom: 0.4rem;
+}
+
+.evidencias-cierre {
+  margin: 1rem 0 1.35rem;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--accent);
+  background: rgba(34, 211, 238, 0.07);
+  border-radius: 0 10px 10px 0;
+  font-family: var(--font-sans);
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.nota-aclaratoria code {
+  font-size: 0.84em;
+  word-break: break-word;
+}
+
 .analisis-evidencia {
   margin: 1rem 0 1.35rem;
   padding: 1.1rem 1.25rem 1.2rem;
