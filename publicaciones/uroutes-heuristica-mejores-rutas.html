@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c4a6e" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="/site.css" as="style" />
+    <meta
+      name="description"
+      content="uRoutes y la heurística aplicada a rutas: OR-Tools, ventanas de tiempo, costo operativo y un solo hilo de datos entre almacén, transporte y cliente. Artículo con humor por Miguel Marengo Canales."
+    />
+    <meta
+      name="keywords"
+      content="uRoutes, optimización de rutas, OR-Tools, heurística, TMS, Silodisa, logística"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Miguel Marengo Canales" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_MX" />
+    <meta
+      property="og:title"
+      content="uRoutes: rutas excelentes sin pelear con el mapa (sí, con heurística)"
+    />
+    <meta
+      property="og:description"
+      content="Por qué un motor de rutas serio convive con almacén y cliente en un mismo mapa operativo."
+    />
+    <meta property="article:published_time" content="2026-05-12" />
+    <meta property="article:modified_time" content="2026-05-12" />
+    <meta
+      property="og:url"
+      content="https://www.miguelmarengocanales.com/publicaciones/uroutes-heuristica-mejores-rutas.html"
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.miguelmarengocanales.com/publicaciones/uroutes-heuristica-mejores-rutas.html"
+    />
+    <link rel="stylesheet" href="/site.css" />
+
+    <title>uRoutes: rutas excelentes sin pelear con el mapa — Miguel Marengo Canales</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "uRoutes: rutas excelentes sin pelear con el mapa (sí, con heurística)",
+        "datePublished": "2026-05-12",
+        "dateModified": "2026-05-12",
+        "url": "https://www.miguelmarengocanales.com/publicaciones/uroutes-heuristica-mejores-rutas.html",
+        "inLanguage": "es-MX",
+        "author": { "@id": "https://www.miguelmarengocanales.com/#person" },
+        "publisher": { "@id": "https://www.miguelmarengocanales.com/#person" },
+        "isPartOf": { "@id": "https://www.miguelmarengocanales.com/#website" }
+      }
+    </script>
+  </head>
+  <body class="page-publicaciones">
+    <nav class="site-nav" aria-label="Menú principal">
+      <a href="../index.html">Inicio</a>
+      <a href="../publicaciones.html" aria-current="page">Publicaciones técnicas</a>
+      <a href="../transparencia.html">Transparencia y aclaraciones</a>
+      <a href="../transparencia.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
+    </nav>
+
+    <main class="wrap">
+      <p class="pub-back">
+        <a href="../publicaciones.html">← Índice de publicaciones técnicas</a>
+      </p>
+
+      <header class="hero pub-article-hero" id="top">
+        <h1>uRoutes: rutas excelentes sin pelear con el mapa (sí, con heurística)</h1>
+        <p class="tagline">
+          Publicado el <time datetime="2026-05-12">12 de mayo de 2026</time> · Miguel Marengo Canales
+        </p>
+      </header>
+
+      <article class="paper content">
+        <p class="lead">
+          En <a href="https://www.silodisa.com/">Silodisa</a> el lema va en serio:
+          <strong>one map, full chain</strong> — un mapa, cadena completa. Su plataforma
+          <strong>uRoutes</strong> es el hilo que evita que el almacén, la flota y la evidencia hacia el
+          cliente vivan en universos paralelos (y en hojas de cálculo que nadie quiere reconciliar los
+          viernes). Este texto mezcla humor con lo que el sitio promete de verdad: motor de optimización,
+          operación en campo y trazabilidad que aguanta mirada fina.
+        </p>
+
+        <h2>Tu cerebro no es un solver (y está bien)</h2>
+        <p>
+          Todos hemos sido “planificadores intuitivos”: zoom al mapa, intuición, una pizca de fe y el deseo
+          de que el repartidor no nos mande un audio a las 6:15 a. m. La
+          <strong>heurística</strong> humana sirve para prioridades y criterios; la de un sistema como uRoutes
+          está pensada para combinar esas reglas con un motor que sí disfruta las
+          <strong>restricciones</strong>: capacidades, ventanas de tiempo, tiempos de servicio, costos de
+          operación. En la práctica, el sitio lo dice sin poesía excesiva: el TMS apunta a
+          <strong>OR-Tools</strong> en la nube, planificación con sentido y una app para quien ejecuta en
+          ruta. No es magia; es optimización con límite de velocidad y casetas incluidas en el modelo.
+        </p>
+
+        <h2>Ventajas de tener “un cerebro de rutas” que sí respeta la realidad</h2>
+        <p>
+          Si tienes que justificar por qué invertir tiempo en un sistema —y no en otro tablero bonito que
+          nadie usa—, estas son las ventajas que yo rescato del mensaje público de Silodisa, con traducción a
+          lenguaje humano:
+        </p>
+        <ul class="pub-prose-list">
+          <li>
+            <strong>Menos adivinanza, más plan:</strong> el motor asigna paradas y secuencia bajo reglas; el
+            planificador valida en mapa, ajusta y autoriza. La hoja de Excel no pierde contra ti: nunca compitió
+            en tu misma liga.
+          </li>
+          <li>
+            <strong>Ventanas de tiempo que no son decorativas:</strong> cuando el cliente, la ventana prometida y el
+            tráfico compiten por el mismo minuto, el sistema puede codificar eso mejor que un recordatorio en
+            una nota pegada al monitor.
+          </li>
+          <li>
+            <strong>Costo operativo a la vista:</strong> parámetros de combustible, casetas y tiempos de
+            servicio dejan de ser “un costo que ya veremos”. El plan trae una foto del gasto estimado — ideal
+            para dejar de negociar con el futuro.
+          </li>
+          <li>
+            <strong>Plan → ruta → evidencia → liquidación:</strong> la línea de producción mental del TMS deja
+            claro que una ruta bonita sin captura en campo es un meme logístico. En el sitio público se describe la torre
+            de entregas con estados (en vivo, autorizadas, liquidadas), mapa, POF y hasta SOS cuando algo se
+            pasa de drama.
+          </li>
+          <li>
+            <strong>Un solo hilo de datos (WMS + TMS + CRM):</strong> el inventario no inventa existencias por
+            un lado mientras el transporte promete milagros por el otro. El CRM hacia el cliente es
+            lectura/evidencia; el operativo fuerte vive conectado al mismo motor. Menos reconciliación, más
+            sueño para el equipo de TI — que también es gente.
+          </li>
+        </ul>
+
+        <h2>“¿Y mi versión?”</h2>
+        <p>
+          Si te gustan los detalles inútiles en fiestas: en el sitio corre un ticker casi de bolsa con los
+          centros en vivo y referencias tipo <strong>uRoutes v0.3.15</strong>. No es el mensaje central, pero
+          resume el espíritu: plataforma viva, desplegada, con numerito de build para quien disfruta el
+          changelog. Si tú no, yo un poco sí.
+        </p>
+
+        <h2>Cierre con trazo firme</h2>
+        <p>
+          Tener un sistema que ayude a generar las <strong>mejores rutas</strong> con heurística bien aplicada
+          no sustituye el criterio humano: lo <em>pone en el asiento del copiloto</em> con GPS, combustibles y
+          SLA en la consola. Si tu operación sigue alimentada a café y corazón, está bien; solo que el corazón
+          no calcula desvíos por cierre vial a las 7:00 a. m. Mejor dejar que OR-Tools intente primero — y que
+          tu equipo apruebe después con una sonrisa (y una firma).
+        </p>
+        <p class="pub-note">
+          Nota: artículo de divulgación basado en información pública de Silodisa; no es asesoría comercial ni
+          sustituto de un diagnóstico contratado. Si quieres la versión con presupuesto y café en la mesa,
+          ellos tienen formulario y teléfono en el sitio.
+        </p>
+      </article>
+
+      <footer class="doc-foot">
+        <p>
+          <a href="../publicaciones.html">← Índice de publicaciones</a>
+          ·
+          <a href="../index.html">Inicio</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
