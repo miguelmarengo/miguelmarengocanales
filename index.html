@@ -22,8 +22,9 @@
       content="Modelado matemático, software y cadena de suministro con trazabilidad y cumplimiento."
     />
     <meta property="article:modified_time" content="2026-05-12" />
+    <meta property="og:url" content="https://miguelmarengocanales.com/" />
 
-    <link rel="canonical" href="https://miguelmarengocanales.vercel.app/" />
+    <link rel="canonical" href="https://miguelmarengocanales.com/" />
     <link rel="stylesheet" href="/site.css" />
 
     <title>Miguel Marengo Canales — Trayectoria técnica</title>
@@ -31,11 +32,33 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Miguel Marengo Canales",
-        "jobTitle": "Especialista en sistemas, matemáticas aplicadas y optimización logística",
-        "description": "Trayectoria técnica en modelado, software y cadena de suministro.",
-        "url": "https://miguelmarengocanales.vercel.app/"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://miguelmarengocanales.com/#website",
+            "url": "https://miguelmarengocanales.com/",
+            "name": "Miguel Marengo Canales",
+            "inLanguage": "es-MX",
+            "publisher": { "@id": "https://miguelmarengocanales.com/#person" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://miguelmarengocanales.com/#org-silodisa",
+            "name": "Silodisa",
+            "url": "https://www.silodisa.com/",
+            "sameAs": ["https://www.silodisa.com/"]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://miguelmarengocanales.com/#person",
+            "name": "Miguel Marengo Canales",
+            "jobTitle": "Especialista en sistemas, matemáticas aplicadas y optimización logística",
+            "description": "Trayectoria técnica en modelado, software y cadena de suministro.",
+            "url": "https://miguelmarengocanales.com/",
+            "worksFor": { "@id": "https://miguelmarengocanales.com/#org-silodisa" },
+            "sameAs": ["https://www.silodisa.com/"]
+          }
+        ]
       }
     </script>
   </head>
