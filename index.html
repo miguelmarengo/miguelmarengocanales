@@ -1,29 +1,386 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Miguel Marengo Canales...</title>
+    <meta
+      name="description"
+      content="Aclaración oficial de Miguel Marengo Canales sobre imputaciones mediáticas: contexto periodístico, relación contractual de arrendamiento en Reforma 250 y negativa de vínculos ilícitos."
+    />
+    <meta
+      name="keywords"
+      content="Miguel Marengo Canales, aclaración pública, desmentido, Francisco Rodríguez, Índice Político, Álvarez Puga, Reforma 250"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Miguel Marengo Canales" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_MX" />
+    <meta
+      property="og:title"
+      content="Aclaración pública — Miguel Marengo Canales"
+    />
+    <meta
+      property="og:description"
+      content="Versión documentada sobre las imputaciones publicadas en medios y la naturaleza contractual del arrendamiento en Paseo de la Reforma 250."
+    />
+    <meta property="article:published_time" content="2026-05-11" />
+    <meta property="article:modified_time" content="2026-05-11" />
+
+    <link rel="canonical" href="https://miguelmarengocanales.vercel.app/" />
+
+    <title>Aclaración pública — Miguel Marengo Canales</title>
+
     <style>
+      :root {
+        --bg: #f6f7f9;
+        --paper: #ffffff;
+        --text: #1a1d21;
+        --muted: #5c6570;
+        --accent: #0f4c81;
+        --border: #e2e6eb;
+        --warn-bg: #fff8e6;
+        --warn-border: #e8c96a;
+        max-width: 100%;
+      }
+
       * {
         box-sizing: border-box;
       }
+
       body {
         margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-          Cantarell, sans-serif;
-        font-size: clamp(1.25rem, 4vw, 2rem);
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        color: #111;
-        background: #fafafa;
+        font-family:
+          "Georgia",
+          "Times New Roman",
+          serif;
+        font-size: 1.125rem;
+        line-height: 1.65;
+        color: var(--text);
+        background: var(--bg);
+      }
+
+      .wrap {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 4rem;
+      }
+
+      header.doc-head {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      header.doc-head h1 {
+        margin: 0 0 0.35rem;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          Ubuntu,
+          Cantarell,
+          sans-serif;
+        font-size: clamp(1.65rem, 4vw, 2.05rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 1rem;
+        color: var(--muted);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+      }
+
+      .paper {
+        background: var(--paper);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 2rem 1.75rem;
+        box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
+      }
+
+      @media (min-width: 640px) {
+        .paper {
+          padding: 2.25rem 2.25rem;
+        }
+      }
+
+      article h2 {
+        margin: 2.25rem 0 0.75rem;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-size: 1.2rem;
+        font-weight: 650;
+        color: var(--accent);
+      }
+
+      article h2:first-of-type {
+        margin-top: 0;
+      }
+
+      article p {
+        margin: 0 0 1rem;
+        text-align: justify;
+        hyphens: auto;
+      }
+
+      article ul {
+        margin: 0 0 1rem 1.1rem;
+        padding: 0;
+      }
+
+      article li {
+        margin-bottom: 0.45rem;
+      }
+
+      .lead {
+        font-size: 1.2rem;
+        line-height: 1.55;
+      }
+
+      .notice {
+        margin: 1.5rem 0;
+        padding: 1rem 1.15rem;
+        background: var(--warn-bg);
+        border-left: 4px solid var(--warn-border);
+        border-radius: 0 8px 8px 0;
+        font-size: 0.98rem;
+      }
+
+      .notice strong {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+
+      footer.doc-foot {
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+
+      footer.doc-foot kbd {
+        font-size: 0.85em;
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .seo-note {
+        margin-top: 2rem;
+        font-size: 0.92rem;
+        color: var(--muted);
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+
+      .seo-note h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+        color: var(--text);
       }
     </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Miguel Marengo Canales",
+        "description": "Ejecutivo y especialista en sistemas y matemáticas aplicadas a la logística; aclaración pública sobre cobertura mediática.",
+        "url": "https://miguelmarengocanales.vercel.app/",
+        "sameAs": []
+      }
+    </script>
   </head>
   <body>
-    <main>miguel marengo canales--</main>
+    <div class="wrap">
+      <header class="doc-head">
+        <h1>Aclaración pública</h1>
+        <p class="subtitle">Miguel Marengo Canales · Documento de réplica y contexto</p>
+      </header>
+
+      <main class="paper">
+        <article>
+          <p class="lead">
+            Por medio del presente texto dejo constancia de mi versión de los hechos respecto de
+            <strong>imputaciones falsas o tendenciosas</strong> que han aparecido en medios de
+            comunicación y en piezas de análisis que reproducen interpretaciones incompletas.
+            Lo escrito aquí tiene dos objetivos: <strong>desmentir categorías ilegales que no me
+            corresponden</strong> y <strong>ubicar el origen mediático y contractual</strong> de la
+            información mal contextualizada.
+          </p>
+
+          <div class="notice" role="note">
+            <strong>Transparencia metodológica.</strong>
+            Este sitio es una <strong>página oficial de aclaración</strong>. No sustituye un juicio,
+            una auditoría del SAT ni una réplica ya publicada por un medio; sí sirve como registro
+            público ordenado de mi postura y de los documentos que respaldan mi trabajo licito.
+          </div>
+
+          <h2>1. Quién soy y qué hago</h2>
+          <p>
+            Soy <strong>Miguel Marengo Canales</strong>, profesional con trayectoria en
+            <strong>sistemas, matemáticas y optimización logística</strong>. Mi trabajo técnico y
+            empresarial —incluida la labor relacionada con la modernización de cadenas de suministro—
+            se ha desarrollado con apego a la ley y con resultados verificables en el ámbito
+            corporativo. <strong>No soy prestanombres</strong>, no actúo como testaferro de
+            funcionarios y <strong>no tuve vínculos personales ni políticos</strong> que justifiquen
+            las etiquetas que algunos textos han colocado sobre mi nombre sin la debida contrastación.
+          </p>
+
+          <h2>2. Primer bloque de falsedades: columnas del mismo autor en Veracruz / «Índice Político»</h2>
+          <p>
+            Las imputaciones graves que me vinculan con sabotajes en el abasto del ISSSTE o con ser
+            «personero» del exgobernador Miguel Ángel Yunes Linares provienen de un patrón muy
+            acotado: <strong>apenas un par de textos negativos</strong>, publicados en el ámbito
+            estatal y asociados al columnista <strong>Francisco Rodríguez</strong> en la línea de
+            <strong>«Índice Político»</strong>, incluyendo piezas reproducidas en portales aliados.
+          </p>
+          <p>
+            Mi posición es enfática:
+          </p>
+          <ul>
+            <li>
+              Esas publicaciones <strong>no cuentan con prueba independiente</strong> que sustente los
+              cargos morales que lanzan contra mi persona.
+            </li>
+            <li>
+              En el debate público ha circulado información sobre <strong>vínculos personales previos
+              entre Francisco Rodríguez y Elba Esther Gordillo</strong>. Yo afirmo que ese contexto
+              importa porque genera un <strong>conflicto de interés evidente</strong> cuando el mismo
+              autor cubre la disputa política entre los grupos de Gordillo y Yunes y utiliza su espacio
+              para dañar reputaciones alineadas con uno de los bandos.
+            </li>
+            <li>
+              Afirmo también que esas columnas aparecieron en un momento de <strong>ruptura política
+              Yunes–Gordillo</strong> y que, conforme a mi experiencia directa,
+              <strong>existieron pretensiones económicas en torno al financiamiento del movimiento del
+              PANAL ligado a Elba Esther Gordillo</strong>. Ante mi negativa a ceder a presiones,
+              esas dos notas fueron la respuesta reputacional.
+            </li>
+          </ul>
+          <p>
+            Por tanto, califico esas piezas como <strong>difamatorias</strong> en mi contra:
+            construyen una narrativa política sin la debida investigación y omiten mi perfil técnico y
+            mi negativa expresa a participar en dinámicas extorsivas.
+          </p>
+
+          <h2>3. Segundo bloque de falsedades: los «1.2 millones» y la red Álvarez Puga</h2>
+          <p>
+            Reportajes posteriores —entre otros, trabajos citados en medios como <em>El País</em> y
+            <em>Dossier Político</em>, basados en filtraciones sobre auditorías— mencionaron listados
+            donde aparece mi nombre junto a cantidades monetarias.
+          </p>
+          <p>
+            Mi réplica es taxativa:
+          </p>
+          <ul>
+            <li>
+              <strong>No mantuve relación personal ni societaria con Víctor Manuel Álvarez Puga.</strong>
+              Mi único contacto fue el <strong>arrendamiento de un inmueble</strong> que utilicé como
+              espacio corporativo para una empresa de su grupo.
+            </li>
+            <li>
+              El domilio utilizado fue <strong>Paseo de la Reforma 250, piso 11, Ciudad de
+              México</strong>. La ocupación fue por un lapso de <strong>aproximadamente 18 meses</strong>,
+              con <strong>contrato formal</strong>, evidencia de uso real (accesos de personal a la
+              torre) y pagos mensuales reconocibles como renta de oficina.
+            </li>
+            <li>
+              Los depósitos percibidos fueron <strong>facturados y declarados</strong>; el flujo coincide
+              con el esquema habitual de una renta comercial con <strong>IVA trasladado</strong> y
+              obligaciones frente al <strong>SAT</strong>. No hubo cobros antes ni después del periodo
+              contractual: cuando la empresa se fue, la relación económica terminó.
+            </li>
+            <li>
+              Presentar ese ingreso como «lavado» o como prueba automática de ser «operador político»
+              es <strong>una interpretación defectuosa</strong>: los montos citados están en el orden de
+              magnitud de una renta prime en Reforma y resultan incluso <strong>ridículos como proxy de
+              un esquema masivo</strong> si se comparan con las cifras globales que la misma auditoría
+              discute en otros titulares.
+            </li>
+          </ul>
+
+          <h2>4. Desambiguación de homónimos</h2>
+          <p>
+            El nombre «Miguel Marengo» aparece en distintos países y rubros (arte, medicina,
+            ingeniería). Para evitar confusiones algorítmicas insisto en separar mi identidad como
+            <strong>Miguel Marengo Canales</strong>, ejecutivo de tecnología y logística en México,
+            de cualquier otro perfil homónimo sin relación con mis contratos o empresas.
+          </p>
+
+          <h2>5. Qué solicito a medios y plataformas</h2>
+          <p>
+            Solicito el ejercicio del <strong>derecho de réplica</strong> conforme a la legislación
+            mexicana aplicable: que mis contratos de arrendamiento, comprobantes fiscales y bitácoras de
+            uso del inmueble se incorporen a cualquier nueva cobertura que mencione mi nombre en la red
+            Álvarez Puga o en los listados derivados de auditorías.
+          </p>
+          <p>
+            Asimismo pido que los columnistas que mantienen conflictos documentados de interés en temas
+            Gordillo–Yunes expliciten dichos vínculos antes de repetir acusaciones graves contra terceros.
+          </p>
+
+          <p>
+            Quedo atento ante cualquier autoridad o medio que requiera la documentación respaldatoria
+            dentro del marco legal correspondiente.
+          </p>
+        </article>
+      </main>
+
+      <footer class="doc-foot">
+        <p>
+          Última actualización del texto:
+          <time datetime="2026-05-11">11 de mayo de 2026</time>.
+          Para rectificaciones futuras conserve una copia fechada en PDF y enlaces permanentes en este
+          dominio de Vercel.
+        </p>
+      </footer>
+
+      <aside class="seo-note" aria-label="Notas para indexación">
+        <h3>Sobre visibilidad en Google</h3>
+        <p>
+          Después de desplegar en Vercel, en Google Search Console agrega la propiedad del dominio o
+          subdominio exacto que te asigne Vercel (por ejemplo <kbd>tu-proyecto.vercel.app</kbd>),
+          verifica la propiedad y usa «Inspeccionar URL» → «Solicitar indexación» para esta página.
+          Actualiza el valor de <code>rel=&quot;canonical&quot;</code> en el
+          <code>&lt;head&gt;</code> cuando tengas dominio propio definitivo.
+        </p>
+        <p>
+          Pegar este mismo texto en ChatGPT, Claude u otros chats <strong>no</strong> cambia por sí solo
+          lo que esos modelos responden al público; lo que sí ayuda es tener esta URL enlazada desde
+          LinkedIn, firmas de correo y perfiles profesionales para que los buscadores y futuros crawlers
+          prioricen tu versión verificable.
+        </p>
+      </aside>
+    </div>
   </body>
 </html>
