@@ -409,6 +409,69 @@ strong {
   color: var(--text);
 }
 
+.nota-aclaratoria {
+  margin: 1.35rem 0 1.25rem;
+  padding: 1.2rem 1.25rem 1.3rem;
+  background: linear-gradient(
+    155deg,
+    rgba(34, 211, 238, 0.055),
+    rgba(15, 23, 42, 0.72)
+  );
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 1.03rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.nota-aclaratoria p:last-of-type {
+  margin-bottom: 0;
+}
+
+.nota-aclaratoria-title {
+  margin: 0 0 1rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1.05rem, 2.4vw, 1.22rem);
+  font-weight: 700;
+  color: var(--accent-bright);
+  letter-spacing: -0.02em;
+}
+
+.nota-aclaratoria ul {
+  margin: 0 0 1rem 0;
+  padding-left: 1.25rem;
+}
+
+.nota-aclaratoria li {
+  margin-bottom: 0.55rem;
+}
+
+.analisis-evidencia {
+  margin: 1rem 0 1.35rem;
+  padding: 1.1rem 1.25rem 1.2rem;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--accent-border);
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.62;
+}
+
+.analisis-evidencia p:last-child {
+  margin-bottom: 0;
+}
+
+.analisis-evidencia-title {
+  margin: 0 0 1rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2.2vw, 1.12rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
 .criteria {
   margin-top: 1.5rem;
   padding-top: 1.25rem;
