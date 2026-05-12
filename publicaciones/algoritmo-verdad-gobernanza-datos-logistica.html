@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050810" />
+    <link rel="preload" href="/site.css" as="style" />
+    <meta
+      name="description"
+      content="Por qué la gobernanza de datos es la base de decisiones defendibles en la cadena de suministro: consistencia semántica, linaje y cumplimiento frente a la ilusión de precisión de los modelos."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Miguel Marengo Canales" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="es_MX" />
+    <meta
+      property="og:title"
+      content="El algoritmo de la verdad: gobernanza de datos en logística — Miguel Marengo Canales"
+    />
+    <meta
+      property="og:description"
+      content="La diferencia entre una cadena resiliente y una frágil suele estar en cómo se define y custodia la verdad operativa antes de optimizar."
+    />
+    <meta property="article:published_time" content="2026-05-12" />
+    <meta property="article:modified_time" content="2026-05-12" />
+    <meta
+      property="og:url"
+      content="https://www.miguelmarengocanales.com/publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html"
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.miguelmarengocanales.com/publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html"
+    />
+    <link rel="stylesheet" href="/site.css" />
+
+    <title>El algoritmo de la verdad: gobernanza de datos en logística — Miguel Marengo Canales</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "El algoritmo de la verdad: por qué la gobernanza de datos es la única salvación en la logística",
+        "datePublished": "2026-05-12",
+        "dateModified": "2026-05-12",
+        "url": "https://www.miguelmarengocanales.com/publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html",
+        "inLanguage": "es-MX",
+        "author": { "@id": "https://www.miguelmarengocanales.com/#person" },
+        "publisher": { "@id": "https://www.miguelmarengocanales.com/#person" },
+        "isPartOf": { "@id": "https://www.miguelmarengocanales.com/#website" },
+        "keywords": "gobernanza de datos, logística, cadena de suministro, trazabilidad, KPI, transparencia"
+      }
+    </script>
+  </head>
+  <body class="page-publicaciones">
+    <nav class="site-nav" aria-label="Menú principal">
+      <a href="../index.html">Inicio</a>
+      <a href="../publicaciones.html" aria-current="page">Publicaciones técnicas</a>
+      <a href="../transparencia.html">Transparencia y aclaraciones</a>
+      <a href="../transparencia.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
+    </nav>
+
+    <main class="wrap">
+      <p class="pub-back">
+        <a href="../publicaciones.html#rubro-tecnologia">← Índice de publicaciones técnicas (Tecnología)</a>
+      </p>
+
+      <header class="hero pub-article-hero" id="top">
+        <h1>El algoritmo de la verdad: por qué la gobernanza de datos es la única salvación en la logística</h1>
+        <p class="tagline">
+          Publicado el <time datetime="2026-05-12">12 de mayo de 2026</time> · Miguel Marengo Canales
+        </p>
+      </header>
+
+      <article class="paper content">
+        <p class="lead">
+          En la logística moderna casi nadie pierde por falta de ambición tecnológica: pierde por <strong>datos mal definidos</strong>,
+          mal custodiados o mal interpretados. Los sistemas pueden optimizar rutas, inventarios y tiempos de servicio; pero si lo que
+          entra al modelo es inconsistente, lo que sale es una <em>ilusión de precisión</em>.
+        </p>
+
+        <p>
+          La diferencia entre una cadena resiliente y una cadena frágil no suele estar solo en el algoritmo, sino en algo más humilde y
+          más poderoso: la <strong>gobernanza de datos</strong>. Piensa en ella como el <strong>contrato invisible</strong> entre
+          operaciones, finanzas, tecnología y cumplimiento: acuerda qué cuenta como verdad operativa, quién puede cambiarla, cómo se audita
+          y con qué reglas se corrige.
+        </p>
+
+        <h2>1. Por qué la logística fragmenta la verdad</h2>
+        <p>
+          La cadena de suministro produce datos por segundo: pedidos, inventarios en tránsito, OTIF, tiempos de ciclo, excepciones,
+          devoluciones, costos variables. El problema es que esos datos <strong>no nacen comparables</strong>. Un mismo SKU puede
+          llamarse distinto en ERP, WMS y TMS; una hora puede significar «promesa al cliente» en ventas y «salida real del centro» en
+          transporte; una demora puede registrarse como «atraso operativo» en una tabla y como «incidente no clasificado» en otra.
+        </p>
+        <p>
+          Cuando eso ocurre, los tableros parecen maduros y las reuniones parecen maduras; pero por debajo hay <strong>silos
+          semánticos</strong>. El modelo matemático no está equivocado: está alimentado con <strong>realidades paralelas</strong>.
+        </p>
+        <p>
+          Aquí aparece la idea central: la verdad logística no es un archivo, es una <strong>cadena de custodia</strong>. Como en
+          auditoría, lo decisivo no es tener «un número bonito», sino poder responder tres preguntas sin drama:
+        </p>
+        <ul class="pub-prose-list">
+          <li>¿De dónde salió este número?</li>
+          <li>¿Qué transformaciones sufrió?</li>
+          <li>¿Quién es responsable si cambia?</li>
+        </ul>
+        <p>Si puedes responderlas con sistema —no con heroísmo individual— tienes una ventaja competitiva silenciosa pero brutal.</p>
+
+        <h2>2. «El algoritmo de la verdad»: reglas antes que optimización</h2>
+        <p>
+          Los algoritmos de optimización funcionan mejor cuando el problema está bien formulado. En la práctica, lo que más suele fallar
+          no es la capacidad de cómputo, sino la <strong>definición operativa del problema</strong>: qué es «demanda», qué es «stock
+          disponible», qué es «servicio» (por línea, por orden completa o por valor monetario).
+        </p>
+        <p>
+          La gobernanza convierte estas preguntas en <strong>políticas explícitas</strong>. Cuando hay políticas explícitas, el
+          aprendizaje automático deja de ser una máquina de adivinar correlaciones frágiles y se convierte en un instrumento para
+          <strong>medir mejor</strong>, <strong>simular mejor</strong> y <strong>decidir mejor</strong>.
+        </p>
+        <p>
+          En ese sentido, la gobernanza es «el algoritmo de la verdad»: <strong>prioriza consistencia sobre sofisticación</strong>. Y
+          en logística, la consistencia produce lo que más importa en el largo plazo: <strong>predicibilidad</strong>.
+        </p>
+
+        <h2>3. Por qué esto es salvación —y no lujo corporativo</h2>
+        <p>Sin gobernanza, la logística entra en un ciclo demasiado común:</p>
+        <ul class="pub-prose-list">
+          <li>se mide mucho, pero <strong>no se mide lo mismo</strong>;</li>
+          <li>se culpa al proveedor cuando la causa raíz eran <strong>reglas de datos contradictorias</strong>;</li>
+          <li>se compra una nueva herramienta cuando el problema era <strong>semántico</strong>, no tecnológico.</li>
+        </ul>
+        <p>
+          La salvación económica está en que los errores caros no se distribuyen como «ruido inexplicable», sino que aparecen como
+          <strong>alertas tempranas</strong>: rupturas de inventario falsas, OTIF artificialmente alto o bajo, costos ocultos por
+          reclasificación manual constante.
+        </p>
+        <p>La empresa que gobierna sus datos puede hacer tres cosas que las demás apenas prometen:</p>
+        <ul class="pub-prose-list">
+          <li><strong>Auditar decisiones</strong>: saber si la mejora fue real o fue artefacto contable u operativo.</li>
+          <li><strong>Escalar sin fractura</strong>: incorporar nuevos centros o socios sin reinventar definiciones cada vez.</li>
+          <li><strong>Comprometerse con cumplimiento</strong>: trazabilidad no como slogan, sino como práctica repetible.</li>
+        </ul>
+
+        <h2>4. Un marco simple para empezar</h2>
+        <p>Si buscas algo ejecutable en pocas semanas —no un programa eterno— usa este orden:</p>
+        <ul class="pub-prose-list">
+          <li>
+            <strong>Catálogo de definiciones críticas</strong> (10–20 métricas máximo): prioriza las que mueven dinero y servicio.
+          </li>
+          <li>
+            <strong>Linaje mínimo viable</strong>: para cada KPI crítico —fuente primaria, transformaciones y propietario del dato
+            («data owner»). Sin dueño, no hay gobernanza; hay folklore.
+          </li>
+          <li>
+            <strong>Reglas de calidad automatizables</strong>: duplicados, saltos imposibles, unidades inconsistentes, cortes temporales
+            mal aplicados.
+          </li>
+          <li>
+            <strong>Política de cambios versionada</strong>: cuando cambia una definición, debe existir fecha efectiva y comunicación
+            explícita; si no, comparas abril con marzo sin saber que cambió el mundo semántico entre ambos.
+          </li>
+        </ul>
+
+        <h2>Cierre</h2>
+        <p>
+          La logística premiará cada vez más a quien puede demostrar —internamente y ante socios— que sus números <strong>aguantan
+          preguntas incómodas</strong>. En mercados donde la reputación operativa es capital, la transparencia técnica reduce riesgo,
+          reduce fricción contractual y acelera decisiones.
+        </p>
+        <p class="pub-note">
+          Lectura relacionada en este mismo sitio:
+          <a href="trazabilidad-datos-decisiones-logistica.html">Trazabilidad de datos en decisiones de cadena de suministro</a>.
+        </p>
+      </article>
+
+      <footer class="doc-foot">
+        <p>
+          <a href="../publicaciones.html">← Índice de publicaciones</a>
+          ·
+          <a href="../index.html">Inicio</a>
+        </p>
+      </footer>
+    </main>
+    <script src="/vercel-analytics.js"></script>
+  </body>
+</html>
