@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050810" />
+    <link rel="preload" href="/site.css" as="style" />
+    <meta
+      name="description"
+      content="Miguel Marengo Canales: matemáticas aplicadas, ingeniería de software y optimización logística. Trayectoria técnica, transparencia y evidencia documental."
+    />
+    <meta
+      name="keywords"
+      content="Miguel Marengo Canales, matemáticas aplicadas, sistemas, optimización logística"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Miguel Marengo Canales" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="Miguel Marengo Canales — Trayectoria técnica" />
+    <meta
+      property="og:description"
+      content="Modelado matemático, software y cadena de suministro con trazabilidad, cumplimiento y documentación verificable."
+    />
+    <meta property="article:modified_time" content="2026-05-12" />
+    <meta property="og:url" content="https://www.miguelmarengocanales.com/" />
+
+    <link rel="canonical" href="https://www.miguelmarengocanales.com/" />
+    <link rel="me" href="https://www.linkedin.com/in/miguel-marengo-20a393390/" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: { preflight: false },
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Source Serif 4"', "Georgia", "Times New Roman", "serif"],
+              sans: ["Outfit", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/site.css" />
+
+    <title>Miguel Marengo Canales — Trayectoria técnica</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.miguelmarengocanales.com/#website",
+            "url": "https://www.miguelmarengocanales.com/",
+            "name": "Miguel Marengo Canales",
+            "inLanguage": "es-MX",
+            "publisher": { "@id": "https://www.miguelmarengocanales.com/#person" }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.miguelmarengocanales.com/#org-silodisa",
+            "name": "Silodisa",
+            "url": "https://www.silodisa.com/",
+            "sameAs": ["https://www.silodisa.com/"]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://www.miguelmarengocanales.com/#person",
+            "name": "Miguel Marengo Canales",
+            "jobTitle": "Especialista en sistemas, matemáticas aplicadas y optimización logística",
+            "description": "Trayectoria técnica en modelado, software y cadena de suministro.",
+            "url": "https://www.miguelmarengocanales.com/",
+            "worksFor": { "@id": "https://www.miguelmarengocanales.com/#org-silodisa" },
+            "sameAs": [
+              "https://www.silodisa.com/",
+              "https://www.linkedin.com/in/miguel-marengo-20a393390/"
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="page-inicio">
+    <nav class="site-nav" aria-label="Menú principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="publicaciones.html">Publicaciones técnicas</a>
+      <a href="transparencia.html">Transparencia y aclaraciones</a>
+      <a href="transparencia.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
+    </nav>
+
+    <main class="wrap !max-w-4xl xl:!max-w-5xl px-4 sm:px-6">
+      <header class="hero !border-b-slate-700/40" id="top">
+        <p class="hero-kicker" aria-hidden="true">
+          <span>IO</span> · <span>OR-Tools</span> · <span>evidencia</span>
+        </p>
+        <h1>Miguel Marengo Canales</h1>
+        <p class="tagline">
+          Matemáticas aplicadas · Ingeniería de software · Optimización y logística de alto impacto
+        </p>
+      </header>
+
+      <!-- 1. Hero / introducción técnica -->
+      <section
+        id="intro-tecnica"
+        aria-labelledby="intro-tecnica-heading"
+        class="mt-8 rounded-2xl border border-slate-200/90 bg-white p-6 shadow-lg shadow-black/20 sm:p-8 md:p-10 font-serif text-slate-900 [&_strong]:text-slate-950 [&_a]:font-sans [&_a]:font-semibold [&_a]:text-sky-800 [&_a]:underline [&_a:hover]:text-sky-950"
+      >
+        <span
+          class="inline-block rounded-md border border-sky-200 bg-sky-50 px-2.5 py-1 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-sky-900"
+          >Trayectoria</span
+        >
+        <h2 id="intro-tecnica-heading" class="mt-4 font-sans text-2xl font-bold tracking-tight text-slate-900 md:text-[1.65rem]">
+          Construcción técnica sobre datos, modelos y sistemas
+        </h2>
+        <p class="mt-5 text-lg leading-relaxed text-slate-800">
+          Mi labor se apoya en un mismo hilo conductor: traducir problemas complejos de operación, abasto y cadena de suministro en
+          modelos matemáticos, algoritmos y arquitecturas de software que se puedan implementar, auditar y mejorar con evidencia
+          cuantitativa.
+        </p>
+        <p class="mt-4 leading-relaxed text-slate-800">
+          Trabajo en la intersección de la investigación de operaciones, la ingeniería de sistemas y la gestión logística: desde el
+          diseño de supuestos y variables hasta el despliegue de soluciones que reducen incertidumbre, costo total y fricción operativa.
+          El criterio no es &quot;opinar&quot;: es medir, simular y validar con datos.
+        </p>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-2">
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Matemáticas y modelado</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              El modelado matemático permite tornar escenarios ambiguos en estructuras analíticas: restricciones, funciones objetivo,
+              sensibilidad a parámetros y escenarios de estrés. Ese enfoque es la base para decisiones defendibles frente a auditoría
+              interna, a socios comerciales y a equipos técnicos.
+            </p>
+          </article>
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Programación y sistemas</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              El software es el instrumento donde la matemática cobra forma operativa: pipelines de datos, integraciones, control de
+              versiones, pruebas y despliegue. Mi prioridad es la robustez (qué ocurre en borde y bajo fallos) y la trazabilidad (de
+              dónde sale cada número).
+            </p>
+          </article>
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Logística y cadena de suministro</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              La logística moderna exige optimizar inventarios, rutas, tiempos de respuesta y servicio bajo restricciones reales de red.
+              Ahí el valor no es retórico: es cumplimiento de servicio con costos acotados y visibilidad end-to-end cuando el proyecto lo
+              permite.
+            </p>
+          </article>
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Ciclo de vida de una intervención técnica</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              El trabajo suele seguir una secuencia auditable: diagnóstico cuantitativo (baseline, fugas de servicio, cuellos de botella),
+              diseño de modelo (hipótesis explícitas), implementación controlada (piloto, roll‑out), medición de efecto (KPI antes/después)
+              y mejora continua. Ese ciclo separa el relato de los resultados.
+            </p>
+          </article>
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm md:col-span-2">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Datos: calidad, gobernanza y reproducibilidad</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              Sin datos limpios y trazables, el mejor algoritmo produce conclusiones frágiles. Me enfoco en linaje de datos (origen,
+              transformaciones), reglas de validación y acuerdos de custodia: quién puede ver qué, con qué retención y bajo qué políticas
+              —siempre dentro de marcos legales aplicables.
+            </p>
+          </article>
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm md:col-span-2">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Colaboración con equipos técnicos y de negocio</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              Los proyectos exitosos alinean lenguaje: el área de negocio define restricciones reales y el equipo técnico traduce a
+              formalismo matemático y código. Mi rol habitúa ser el de puente: traducir incertidumbre de negocio en especificaciones,
+              criterios de aceptación y tableros que no confundan correlación con causalidad.
+            </p>
+          </article>
+          <article class="rounded-xl border border-slate-100 bg-slate-50/90 p-5 shadow-sm md:col-span-2">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Ética profesional y cumplimiento</h3>
+            <p class="mt-2 text-[0.98rem] leading-relaxed text-slate-700">
+              Los sistemas que diseño se orientan al marco legal y fiscal vigente; la ingeniería y las finanzas deben ser compatibles con
+              compliance, gobierno corporativo y trazabilidad. No administro ni represento esquemas opacos: mi perfil es el de un
+              constructor técnico con responsabilidad sobre resultados medibles.
+            </p>
+          </article>
+        </div>
+
+        <aside
+          class="mt-8 rounded-xl border border-amber-200/90 bg-amber-50/95 px-5 py-4 font-sans text-[0.98rem] leading-relaxed text-amber-950 shadow-sm"
+          role="note"
+        >
+          <p class="m-0">
+            <span class="font-semibold text-amber-950">Desambiguación:</span> El nombre «Miguel Marengo» aparece en otros países y
+            disciplinas. Este sitio identifica de forma inequívoca a Miguel Marengo Canales en su vertiente profesional en México.
+          </p>
+        </aside>
+      </section>
+
+      <!-- 2. Transparencia -->
+      <section
+        id="transparencia-resumen"
+        aria-labelledby="transparencia-resumen-heading"
+        class="mt-8 rounded-2xl border border-slate-200/90 bg-white p-6 shadow-lg shadow-black/20 sm:p-8 md:p-10 font-serif text-slate-900 [&_strong]:text-slate-950 [&_a]:font-sans [&_a]:font-semibold [&_a]:text-sky-800 [&_a:hover]:text-sky-950"
+      >
+        <span
+          class="inline-block rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-1 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-emerald-900"
+          >Transparencia</span
+        >
+        <h2 id="transparencia-resumen-heading" class="mt-4 font-sans text-xl font-bold tracking-tight text-slate-900 md:text-2xl">
+          Transparencia y aclaraciones públicas | Documento de contexto y verificación
+        </h2>
+        <p class="mt-5 leading-relaxed text-slate-800">
+          Aquí resumo los hechos que puedo respaldar, la documentación que corresponda y cómo cuadra eso con lo que ha salido en medios y
+          en información de autoridades. Mi intención es que cualquier persona entienda de un vistazo qué ocurrió y qué no aplica en mi
+          caso. Lo que se publica sobre una persona no reemplaza el detalle del contrato, la cronología de los hechos ni lo que dicen
+          literalmente los comprobantes de banco.
+        </p>
+        <p class="mt-4 font-sans text-sm text-slate-600">
+          Versión ampliada con índice, PDF incrustado y notas metodológicas:
+          <a href="transparencia.html">Transparencia y aclaraciones públicas</a>.
+        </p>
+      </section>
+
+      <!-- 3. Caso 1 -->
+      <section
+        id="caso-indice-home"
+        aria-labelledby="caso-indice-home-heading"
+        class="mt-8 rounded-2xl border border-slate-200/90 bg-slate-50 p-6 shadow-md shadow-black/15 sm:p-8 md:p-10 font-serif text-slate-900 [&_strong]:text-slate-950 [&_a]:font-sans [&_a]:font-semibold [&_a]:text-sky-800"
+      >
+        <h2 id="caso-indice-home-heading" class="font-sans text-xl font-bold tracking-tight text-slate-900 md:text-[1.35rem]">
+          Caso 1 — «Índice Político», hemerotecas y mi papel técnico ante el ISSSTE
+        </h2>
+        <div class="mt-5 space-y-4 leading-relaxed text-slate-800">
+          <p>
+            Mi participación fue <strong>técnica y acotada</strong> (matemáticas aplicadas y software). No ocupé cargos públicos ni partidarios; el
+            documento enlaza <strong>fuentes públicas cuando existen</strong> para que cualquiera verifique cronología y contexto.
+          </p>
+          <p>
+            En la <a href="transparencia.html#contexto-publico-documentado">versión amplia</a> se enlistan hechos verificables con referencias —
+            desde la trayectoria de la columna «Índice Político» hasta la ruptura pública entre <strong>Gordillo</strong> y
+            <strong>Yunes</strong> en <strong>2011</strong> y columnas críticas posteriores ilustrativas —, más una aclaración metodológica: lo
+            públicamente disponible desde aquí sobre esas menciones no incluye revisión documentada de mis entregables ni cotejo explícito con la
+            metodología aplicada en ellos.
+          </p>
+          <p>
+            También existe una <a href="transparencia.html#observacion-metodologica">observación metodológica</a> sobre estándares de
+            <strong>transparencia editorial</strong> ante posibles vínculos entre quien escribe y los actores tratados; el sitio
+            <strong>no califica una conducta puntual</strong>, sólo enlaza los marcos de referencia para que cada lector compare.
+          </p>
+          <p class="mb-0">
+            <strong>Niego</strong> cualquier relato de «presión indebida» sobre mi método de trabajo. Para el detalle factual, línea temporal,
+            vínculos y referencias:&nbsp;<a href="transparencia.html#contexto-publico-documentado">contexto público documentado</a>
+            ·
+            <a href="transparencia.html#caso-indice-referencias">ISSSTE y hemerotecas</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4. Caso 2 -->
+      <section
+        id="caso-puga"
+        aria-labelledby="caso-puga-heading"
+        class="mt-8 rounded-2xl border border-slate-200/90 bg-white p-6 shadow-lg shadow-black/20 sm:p-8 md:p-10 font-serif text-slate-900 [&_strong]:text-slate-950 [&_a]:font-sans [&_a]:font-semibold [&_a]:text-sky-800"
+      >
+        <h2 id="caso-puga-heading" class="font-sans text-xl font-bold tracking-tight text-slate-900 md:text-[1.35rem]">
+          Caso 2 — Arrendamiento de oficinas en Reforma&nbsp;250
+        </h2>
+        <div class="mt-5 space-y-4 leading-relaxed text-slate-800">
+          <p>
+            Operación de <strong>arrendamiento corporativo</strong> celebrada en <strong>2017</strong>: documentación contractual,
+            <strong>SAT</strong> y trazabilidad bancaria <strong>SPEI</strong>. En la página de transparencia está la cronología puntual,
+            el <strong>marco jurídico aplicable</strong>, qué <strong>sí consta documentalmente</strong> respecto de qué
+            <strong>no consta</strong>, más el PDF del convenio y los comprobantes.
+          </p>
+          <p>
+            Niego categóricamente cualquier sociedad mercantil compartida, red de operaciones financieras o relación personal con el Sr.
+            Víctor Manuel Álvarez Puga; fuera del arrendamiento descrito públicamente aquí
+            <strong class="font-sans">no tengo empresa conjunta ni otros vínculos financieros</strong> con esa persona.
+          </p>
+          <p>
+            En medios y en información vinculada a la FGR aparecen empresas como Integra Software S.A. de C.V. y Seguridad Privada,
+            Inteligencia Cibernética, S.A. de C.V. Conocer ese contexto público sirve para entender por qué un nombre aparece en listados
+            bancarios; igualmente hace falta ver cada cargo con su texto de concepto.
+          </p>
+          <p class="font-sans text-sm font-semibold text-slate-700">
+            <a href="transparencia.html#caso-puga-transparencia" class="text-sky-800 underline underline-offset-2 hover:text-sky-950"
+              >Documento íntegro — Caso&nbsp;2 (cronología, marco jurídico y comprobantes)</a
+            >
+          </p>
+        </div>
+
+        <h3 class="mt-8 font-sans text-lg font-semibold text-slate-900">Cronología contractual y trazabilidad</h3>
+        <ul class="mt-4 list-none space-y-4 border-l-2 border-sky-300 pl-5 font-sans text-[0.98rem] leading-relaxed text-slate-800">
+          <li>
+            <span class="font-semibold text-slate-950">El Origen Inmobiliario (Contrato):</span> El 17 de enero de 2017, celebré un
+            contrato de arrendamiento por las Oficinas C1 y C2, Piso 11, del Desarrollo Reforma Capital, con la empresa Seguridad Privada,
+            Inteligencia Cibernética, S.A. de C.V.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-950">Cesión de Derechos Corporativos:</span> El 30 de marzo de 2017, mediante un
+            Convenio de Cesión de Derechos notariado, el inquilino original transfirió las obligaciones a Integra Software, S.A. de C.V.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-950">Trazabilidad Bancaria Inequívoca (SPEI):</span> Los pagos recibidos por transferencia
+            interbancaria (Santander, 31/05/2019) detallan explícitamente los conceptos de &quot;PAGO ADEUDO RENTA&quot; y &quot;PAGO
+            RESTAURACIONES&quot;.
+          </li>
+          <li>
+            <span class="font-semibold text-slate-950">Cierre Fiscal:</span> Estos ingresos fueron declarados ante el SAT, pagando el IVA e
+            ISR correspondientes.
+          </li>
+          <li class="pb-0">
+            <span class="font-semibold text-slate-950">Observación:</span> Ni el ordenamiento civil y mercantil del arrendamiento ni las leyes penales aplicables establecen por sí mismas responsabilidad del arrendador por actos del arrendatario <strong>fuera del objeto del contrato</strong> y
+            <strong>sin participación del arrendador</strong>.
+          </li>
+        </ul>
+      </section>
+
+      <!-- 5. Evidencia documental -->
+      <section
+        id="evidencia-documental"
+        aria-labelledby="evidencia-documental-heading"
+        class="mt-8 rounded-2xl border-2 border-sky-400/35 bg-gradient-to-b from-slate-50 to-white p-6 shadow-xl shadow-black/25 sm:p-8 md:p-10 ring-1 ring-sky-500/10 font-serif text-slate-900 [&_strong]:text-slate-950"
+      >
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="rounded-full bg-sky-700 px-3 py-1 font-sans text-xs font-bold uppercase tracking-wider text-white">Evidencia</span>
+          <h2 id="evidencia-documental-heading" class="font-sans text-xl font-bold tracking-tight text-slate-900 md:text-2xl">
+            Evidencia documental
+          </h2>
+        </div>
+
+        <div class="mt-8 space-y-10">
+          <!-- Convenio -->
+          <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-md sm:p-6">
+            <h3 class="font-sans text-base font-semibold text-slate-900">Elemento 1 — Convenio de cesión</h3>
+            <p class="mt-3 leading-relaxed text-slate-700">
+              Este archivo es el PDF del convenio/contrato relacionado con Integra Software.
+            </p>
+            <p class="mt-5 font-sans">
+              <a
+                href="/documentos/transparencia/convenio-cesion-integra.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 no-underline"
+                >Abrir o descargar el PDF del Convenio</a
+              >
+            </p>
+            <p class="mt-4 font-sans text-sm text-slate-600">
+              También disponible como paquete único:
+              <a href="/documentos/Aclaracion-Arrendamiento-Integra-Alvarez-Puga.pdf" class="font-semibold text-sky-800 underline"
+                >Aclaración — arrendamiento (PDF)</a
+              >.
+            </p>
+          </article>
+
+          <!-- Comprobante renta -->
+          <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-md sm:p-6">
+            <h3 class="font-sans text-base font-semibold text-slate-900">
+              Elemento 2 — Comprobante Santander — «PAGO ADEUDO RENTA» (31 de mayo de 2019)
+            </h3>
+            <figure class="evidencia-card mt-5">
+              <a
+                href="/documentos/transparencia/comprobante-pago-adeudo-renta-2019-05-31.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="evidencia-card__link"
+              >
+                <img
+                  src="/documentos/transparencia/comprobante-pago-adeudo-renta-2019-05-31.png"
+                  alt="Comprobante Santander 31 mayo 2019: PAGO ADEUDO RENTA, Integra Software a Miguel Marengo Canales."
+                  loading="lazy"
+                  decoding="async"
+                  class="h-auto w-full"
+                />
+              </a>
+              <figcaption>Comprobante de operación — amplíe en nueva pestaña si lo necesita</figcaption>
+            </figure>
+            <div class="evidencia-meta mt-4">
+              <p class="font-sans font-semibold text-slate-200">Datos visibles (resumen)</p>
+              <ul class="font-sans">
+                <li>Banco emisor: Grupo Financiero Santander.</li>
+                <li>Cuenta cargo: INTEGRA SOFTWARE SA DE CV.</li>
+                <li>Beneficiario: MIGUEL MARENGO CANALES.</li>
+                <li>Concepto: PAGO ADEUDO RENTA.</li>
+                <li>Estatus: ACEPTADA.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Comprobante restauraciones -->
+          <article class="rounded-xl border border-slate-200 bg-white p-5 shadow-md sm:p-6">
+            <h3 class="font-sans text-base font-semibold text-slate-900">
+              Elemento 3 — Comprobante Santander — «PAGO RESTAURACIONES» (misma fecha)
+            </h3>
+            <figure class="evidencia-card mt-5">
+              <a
+                href="/documentos/transparencia/comprobante-pago-restauraciones-2019-05-31.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="evidencia-card__link"
+              >
+                <img
+                  src="/documentos/transparencia/comprobante-pago-restauraciones-2019-05-31.png"
+                  alt="Comprobante Santander 31 mayo 2019: PAGO RESTAURACIONES, Integra Software a Miguel Marengo Canales."
+                  loading="lazy"
+                  decoding="async"
+                  class="h-auto w-full"
+                />
+              </a>
+              <figcaption>Segundo comprobante — mismo día</figcaption>
+            </figure>
+            <div class="evidencia-meta mt-4">
+              <p class="font-sans font-semibold text-slate-200">Datos visibles (resumen)</p>
+              <ul class="font-sans">
+                <li>Titular cuenta cargo: INTEGRA SOFTWARE SA DE CV.</li>
+                <li>Beneficiario: MIGUEL MARENGO CANALES.</li>
+                <li>Concepto: PAGO RESTAURACIONES.</li>
+                <li>Estatus: ACEPTADA.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer contenido -->
+      <footer class="doc-foot mt-10 max-w-none rounded-2xl border border-slate-700/50 bg-slate-950/40 px-5 py-8 text-left font-serif">
+        <div class="mx-auto max-w-3xl space-y-5 text-[0.95rem] leading-relaxed text-slate-300">
+          <h2 class="font-sans text-lg font-bold text-slate-100">Cómo organicé la información aquí</h2>
+          <ul class="list-none space-y-4 pl-0 font-sans text-slate-400">
+            <li>
+              <span class="font-semibold text-slate-200">Historial en orden:</span> Separé lo que digo tener documentado del momento en que
+              salieron algunas columnas.
+            </li>
+            <li>
+              <span class="font-semibold text-slate-200">Economía cotidiana:</span> Prefiero exponer cómo ese flujo aparece ante el banco
+              (concepto del pago) y qué papel firmé detrás.
+            </li>
+            <li>
+              <span class="font-semibold text-slate-200">Trato cordial:</span> He evitado descalificativos personales y me concentro en
+              hechos reproducibles.
+            </li>
+          </ul>
+          <p class="border-t border-slate-700/60 pt-5 font-mono text-sm text-slate-500">
+            Contenido actualizado:
+            <time datetime="2026-05-12">12 de mayo de 2026</time>.
+          </p>
+          <p class="font-sans text-sm text-slate-500">
+            <a href="publicaciones.html">Publicaciones técnicas</a>
+            ·
+            <a href="transparencia.html">Transparencia y aclaraciones públicas</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="/vercel-analytics.js"></script>
+  </body>
+</html>

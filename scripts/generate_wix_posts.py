@@ -464,8 +464,8 @@ def page_template(
     <nav class="site-nav" aria-label="Menú principal">
       <a href="../../index.html">Inicio</a>
       <a href="../../publicaciones.html" aria-current="page">Publicaciones técnicas</a>
-      <a href="../../transparencia.html">Transparencia y aclaraciones</a>
-      <a href="../../transparencia.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
+      <a href="../../precisiones-prensa.html">Precisiones sobre menciones en prensa</a>
+      <a href="../../precisiones-prensa.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
     </nav>
     <main class="wrap">
       <p class="pub-back">

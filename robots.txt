@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /.wix-one-post.html
+Disallow: /.wix-blog-p2.html
+Disallow: /.wix-blog-p3.html
+Disallow: /backup-prioridad-*/
 
 Sitemap: https://www.miguelmarengocanales.com/sitemap.xml
