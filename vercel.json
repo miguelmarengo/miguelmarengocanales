@@ -3,7 +3,13 @@
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "miguelmarengocanales.vercel.app" }],
-      "destination": "https://miguelmarengocanales.com/:path*",
+      "destination": "https://www.miguelmarengocanales.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "miguelmarengocanales.com" }],
+      "destination": "https://www.miguelmarengocanales.com/:path*",
       "permanent": true
     }
   ]
