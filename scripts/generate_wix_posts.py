@@ -486,6 +486,7 @@ def page_template(
         </p>
       </footer>
     </main>
+    <script src="/vercel-analytics.js"></script>
   </body>
 </html>
 """
