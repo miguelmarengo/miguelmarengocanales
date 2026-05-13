@@ -1066,3 +1066,38 @@ a.btn-read--ghost:hover {
   height: 100%;
   border: 0;
 }
+
+/* Trayectoría / proyectos / contacto (Ronda 3B): subtítulos y listados de material */
+.page-trayectoria .pub-rubro-section h3,
+.page-proyectos .pub-rubro-section h3,
+.page-contacto .pub-rubro-section h3 {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--text-secondary);
+}
+
+.page-proyectos .proj-material-list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding-left: 0;
+}
+
+.page-proyectos .proj-material-item {
+  margin-bottom: 1.25rem;
+}
+
+.page-proyectos .proj-material-item p {
+  margin: 0.25rem 0;
+}
+
+.page-proyectos .proj-material-item a {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--accent-bright);
+}
+
+.page-proyectos .proj-material-item a:hover {
+  color: var(--accent-hover);
+}

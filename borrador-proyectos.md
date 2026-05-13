@@ -1,123 +1,97 @@
-# Borrador — página `proyectos.html` (solo propuesta Markdown)
+# Borrador — página `proyectos.html` (solo Markdown)
 
-Este archivo **no sustituye** al HTML hasta la Ronda 3B tras revisión humana.
+Este archivo anticipa contenido reproducible después de la Ronda 3B. **Sin HTML todavía.**
 
 ---
 
-## Metadatos propuestos para `<head>` (posteriormente)
+## Metadatos propuestos para `<head>`
 
 **title**
 
 `Proyectos y áreas de trabajo — Miguel Marengo Canales`
 
-**meta name="description"**
+**meta name="description"** (~151 caracteres)
 
-`Índice curado por áreas: rutas TMS, IDEs y gobierno datos en logística; enlaces verificados al catálogo técnico publicado miguelmarengocanales.com.` *(147 caracteres, dentro rango 145–158.)*
+`Áreas técnicas de trabajo: optimización con OR‑Tools, ingeniería de software para logística y gobernanza de datos para decisiones operativas.`
 
----
+**Schema.org (propuesta 3B)**
 
-## Cuerpo propuesto para la página
-
-# Proyectos y áreas de trabajo
-
-Esta página agrupa por área temática los proyectos, casos y artículos técnicos publicados en este sitio. Cada bloque enlaza a documentación detallada ya existente como HTML en la sección de publicaciones. No perfila proyectos cerrados que no hayan aparecido en el repositorio: es un **hub de navegación** sobre material verificable públicamente aquí mismo.
-
-La mayor parte del contenido relacionado operaciones marca proviene del blog corporativo histórico de **Silodisa** republicado como archivos `/publicaciones/wix/*`; los textos más recientes firmados aparecen como `/publicaciones/*.html`.
+`CollectionPage` con `about` apuntando a las tres áreas técnicas; `author` o `creator` vinculado al `@id` `Person` ya declarado en `index.html`.
 
 ---
 
-## Área A — Optimización y rutas (TMS, uRoutes, motores OR)
+## Cuerpo de la página
 
-Operación táctica de rutas cuando existen verdaderos límites (ventanas horarias, costo operativo, capacidad vehicular). Incluye el ecosistema **uRoutes** descrito públicamente desde divulgación y biblioteca visual.
+**H1 en HTML:** Proyectos y áreas de trabajo
 
-### Artículos que lo documentan del sitio
-
-- [uRoutes: rutas excelentes sin pelear con el mapa (sí, con heurística)](/publicaciones/uroutes-heuristica-mejores-rutas.html) · 2026‑05‑12 · Heurísticas, OR‑Tools público y un mapa cadena TMS.
-- [Biblioteca de video uRoutes (Silodisa)](/publicaciones/biblioteca-videos-uroutes-silodisa.html) · sin fecha por clip · Embed de vídeos formato Silodisa con panorama WMS/Rutas/App chofer entre otros leads.
-- [Optimizando la planificación de rutas con algoritmos avanzados](/publicaciones/wix/optimizando-la-planificacion-de-rutas-con-algoritmos-avanzados.html) · 2023‑07‑20 · Rutas tiempo real usando OR‑Tools en narrativa inst.
-- [Más Allá del Hype: … IA … Investigación de Operaciones](/publicaciones/wix/mas-alla-del-hype-como-la-inteligencia-artificial-y-la-investigacion-de-operaciones-estan-optimizan.html) · 2025‑11‑29 · Coyuntura operaciones + IO alto nivel marca.
-
-(Opcional relacionado cuando el usuario quiera destacar tecnología también en almacén: [Revolución silenciosa almacén con citación OR‑Tools](/publicaciones/wix/la-revolucion-silenciosa-en-tu-almacen-como-la-ia-y-la-tecnologia-estan-redefiniendo-la-logistica.html) — aquí clasificado institucionalmente como **Área D** en el inventario 3A, pero tecnológico conectable por `OR‑Tools`; decidir orden curatorial en 3B.)
+Esta página agrupa por área temática el trabajo técnico publicado en este sitio. Cada bloque enlaza a documentación detallada en la sección de publicaciones. No es un listado de proyectos cerrados ni un portafolio comercial: es un mapa conceptual sobre material técnico verificable. Para el catálogo completo de artículos ordenado por fecha, consulta la sección [Publicaciones](/publicaciones.html).
 
 ---
 
-## Área B — Software y herramientas de desarrollo
+### Área 1 — Optimización matemática y ruteo
 
-Entornos de programación donde integrar ERP/WMS/TMS/ruteo mediante APIs, datos y automatización reproducible ante staging.
+Aplicación de investigación de operaciones a problemas reales de red logística: ventanas horarias, capacidad vehicular, costos operativos y restricciones de servicio. Trabajo cotidiano con OR‑Tools, heurísticas de ruteo y modelos de programación matemática sobre datos operativos reales de distribución farmacéutica con cadena de frío.
 
-### Artículos
+#### Material técnico publicado
 
-- [Cursor, Zed y Antigravity: IDEs para software de logística](/publicaciones/cursor-zed-antigravity-ides-logistica.html) · 2026‑05‑12 · Contrast práctico tres productos aplicados ejemplos ruteo‑inventario integraciones Python/SQL/etc.
+**[uRoutes: rutas excelentes sin pelear con el mapa](/publicaciones/uroutes-heuristica-mejores-rutas.html)**  
+Heurísticas de ruteo y motor OR‑Tools aplicado a operación de TMS. Mayo 2026.
 
-*(No aparece segunda pieza autoral dedicada sólo desarrollo herramienta en repos además esta hoy mismo.)*
+**[Más allá del hype: inteligencia artificial e investigación de operaciones en logística](/publicaciones/wix/mas-alla-del-hype-como-la-inteligencia-artificial-y-la-investigacion-de-operaciones-estan-optimizan.html)**  
+Distinción entre soluciones de aprendizaje automático y problemas genuinamente combinatorios donde IO sigue siendo el instrumento correcto. Noviembre 2025.
 
----
-
-## Área C — Datos, gobernanza y trazabilidad
-
-Qué hacer **antes** optimizar rutas cuando las definiciones de demanda/inventario/servicio están fragmentadas entre ERP/WMS/TMS; KPI y tiempo real institucional en serie marca.
-
-### Artículos destacados autoría persona
-
-- [El algoritmo de la verdad: … gobernanza de datos en logística](/publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html) · 2026‑05‑12 · Políticas y linaje ante ilusión precisión modelo.
-- [Trazabilidad de datos… cadena suministro](/publicaciones/trazabilidad-datos-decisiones-logistica.html) · 2026‑05‑11 · Snapshots mínimos y reconstruir cadena dato hasta decisión.
-
-### Serie marca (KPIs / tiempo real)
-
-- [Logística tiempo real contra promedios ~30 días](/publicaciones/wix/logistica-en-tiempo-real-por-que-los-promedios-de-30-dias-estan-matando-tu-cadena-de-suministro.html) · 2025‑11‑22
-- [De la Medición… KPIs/mejor continua](/publicaciones/wix/de-la-medicion-a-la-accion-como-los-kpis-y-la-mejora-continua-definen-nuestra-excelencia-logistica.html) · 2025‑10‑25
-- [Más Allá del Dato](/publicaciones/wix/mas-alla-del-dato-por-que-la-logistica-de-clase-mundial-exige-medir-la-realidad-en-tiempo-real.html) · 2025‑11‑15
-- [Más Allá del Esfuerzo](/publicaciones/wix/mas-alla-del-esfuerzo-la-ciencia-de-la-medicion-logistica-en-tiempo-real.html) · 2025‑11‑08
-- [«Echar ganas» vs cultura datos](/publicaciones/wix/mas-alla-del-echale-ganas-por-que-la-cultura-de-datos.html) · 2025‑11‑01
-- [`DATOS, LO QUE DIFERENCIA A SILODISA`](/publicaciones/wix/datos-lo-que-diferencia-a-silodisa.html) · 2025‑07‑07
-
-[Lista completa de publicaciones ordenada por fecha y tema convive en **`/publicaciones.html`**. Si en 3B se desea menor redundancia textual, algunas líneas pueden subsumirse bajo párrafo «Serie …» en vez listar todas.]
+**[Biblioteca de video — uRoutes](/publicaciones/biblioteca-videos-uroutes-silodisa.html)**  
+Recursos visuales sobre el ecosistema operativo: módulos de WMS, TMS, ruteo y aplicación de chofer.
 
 ---
 
-## Área D — Cadena suministro, inventario & operaciones (marca y tendencias macro)
+### Área 2 — Ingeniería de software para logística
 
-Cubre almacenes, distribución pharma citada institucionalmente (Electrolit), nearshoring, indicadores tipo POF y coyunturas 2023 en adelante publicadas marca.
+Diseño y construcción de sistemas reproducibles con trazabilidad de datos, control de versiones y pruebas. Integración entre ERP, WMS, TMS y CRM con APIs auditables. Stack habitual: Python, SQL, Google Cloud, FastAPI, Docker, entornos de desarrollo asistidos por agentes (Cursor, Zed, Google Antigravity).
 
-Selección ejemplo (lista no exhaustiva; ver índice completo):
+#### Material técnico publicado
 
-**Inventario y entrega institucional**
-- [`… Entrega Perfecta (POF)`](/publicaciones/wix/en-silodisa-cada-dato-cuenta-la-clave-de-nuestra-excelencia-operativa.html) · 2025‑08‑09 · POF destacado marca.
-- [Importancia POF standalone](/publicaciones/wix/importancia-del-cumplimiento-perfecto-del-pedido-pof.html)
-- [`… evidencias garantizando … perfecta`](/publicaciones/wix/la-importancia-de-las-evidencias-en-la-logistica-garantizando-una-entrega-perfecta.html)
-
-**Almacén / físico proceso**
-- [Optimizando diseño almacén](/publicaciones/wix/optimizando-el-diseno-del-almacen-para-mejorar-la-eficiencia.html)
-- [Almacén caótico y beneficios](/publicaciones/wix/la-importancia-de-un-almacen-caotico-y-sus-beneficios.html)
-- Filosofías inventario marca (p.ej. doble motor, cero error) — véase inventario clasificado archivo `reporte-3a-inventario.md`.
-
-**Tendencias coyuntura / pharma / nearshore**
-- [Electrolit + misión marca](/publicaciones/wix/detras-de-cada-botella-de-electrolit-la-mision-esencial-de-silodisa.html)
-- [`El Nearshoring…`](/publicaciones/wix/el-nearshoring-esta-aqui-tu-socio-logistico-esta-realmente-preparado.html)
+**[Cursor, Zed y Antigravity: IDEs para software de logística](/publicaciones/cursor-zed-antigravity-ides-logistica.html)**  
+Análisis comparativo de tres entornos de desarrollo asistido por IA aplicados a problemas reales de software para cadena de suministro. Mayo 2026.
 
 ---
 
-## Área E — Cultura empresa, marca y contenido divulgativo no‑técnicos
+### Área 3 — Gobernanza y trazabilidad de datos
 
-Historia narrativa empresa, comunidad trabajadora, prácticas de responsabilidad social y piezas vida personal usando metáforas logísticas.
+Diseño de prácticas de linaje, validación y reconciliación entre sistemas para que los tableros directivos respondan a una sola fuente de verdad. Documentación de supuestos, criterios de aceptación y reconstrucción de cadenas de decisión hasta el dato original.
 
-Selección ejemplo:
+#### Material técnico publicado
 
-- Cultura equipo / comunidad [`Más empresa comunidad`] · [`Poder Asombro 2025`] · [`Familia tecnología propósito`]
-- Sostenibilidad narrativa México [`De Tláloc a la Nube…`]
+**[El algoritmo de la verdad: gobernanza de datos en logística](/publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html)**  
+Cuando las definiciones operativas están fragmentadas entre sistemas, los modelos más sofisticados producen verdades paralelas. Mayo 2026.
 
-Listado completo pautado en archivo inventario clasificación **principal E**.
+**[Trazabilidad de datos en cadena de suministro](/publicaciones/trazabilidad-datos-decisiones-logistica.html)**  
+Snapshots mínimos y reconstrucción de la cadena de un dato hasta la decisión que lo originó. Mayo 2026.
 
-*(En 3B se puede mover bloque opcional menos visible navegación si marca personal del titular debe separar institucional blog vs piezas profesionales sólo Miguel.)*
+#### Aplicación operativa documentada
+
+**[Logística en tiempo real frente a promedios de 30 días](/publicaciones/wix/logistica-en-tiempo-real-por-que-los-promedios-de-30-dias-estan-matando-tu-cadena-de-suministro.html)**  
+KPIs operativos contra mediciones rezagadas en distribución farmacéutica. Noviembre 2025.
+
+**[De la medición a la mejora continua: KPIs operativos](/publicaciones/wix/de-la-medicion-a-la-accion-como-los-kpis-y-la-mejora-continua-definen-nuestra-excelencia-logistica.html)**  
+Octubre 2025.
+
+**[Importancia de las evidencias en la logística: garantizando una entrega perfecta](/publicaciones/wix/la-importancia-de-las-evidencias-en-la-logistica-garantizando-una-entrega-perfecta.html)**  
+Soporte documental sobre la métrica POF (Perfect Order Fulfillment) en operación real.
 
 ---
 
-## Cierre página `proyectos`
+### Catálogo completo
 
-El catálogo vigente clasificado también por los **rubros** del archivo `publicaciones.html` convive con este mapa conceptual. Quien busca inventario navegable alfabet/fecha debe preferir ese índice; quien llega tema primero usa esta página proyectos próxima.
+Para acceder al inventario completo de publicaciones, ordenado por fecha, usa [Publicaciones](/publicaciones.html).
 
 ---
 
-## Notas de implementación siguientes pasos (solo recordatorio persona)
+## Pendientes antes convertir Markdown a página final
 
-[PENDIENTE humana antes HTML]: Orden dentro bloques ¿cronológicos inversión? ¿ocultar sublista larga marca detrás elemento `<details>` accesibilidad? ¿traducir títulos wix muy largos a versión corta visible?
+| Pendiente editorial | Motivo |
+|---------------------|--------|
+| JSON‑LD `CollectionPage` (`about`/tres ejes temáticos, `creator`/`author` ligado `#person`). | Pendiente markup en HTML 3B. |
+| Orden dentro de cada bloque ¿cronología inversa? ¿`<details>` en sublistas largas futuras? | Decisión UX y accesibilidad al maquetar. |
+
+*(Enlaces internos siguen rutas relativas desde raíz; absolutas sólo donde defina política canonical/OG/schema.)*

@@ -20,87 +20,79 @@ Este archivo anticipa contenido reproducible después Ronda 3B. **Sin HTML tod
 
 `knowAbout` debe limitarse tecnologías y conceptos efectivamente aparecidos en artículos o `index`:
 
-`"[\"OR-Tools\", \"heuristic routing\", \"TMS/WMS CRM integration\", \"Cursor IDE\", \"Zed IDE\", \"Google Antigravity\", \"Python\", \"SQL\", \"Docker Compose\", \"FastAPI\", \"Firebase\", \"Firestore\", \"supply chain KPI\", \"data governance\", \"data lineage\"]"`
-*(La lista debe filtrarse o acortarse en 3B según política JSON‑LD de duplicidad con página person actual.)*
+`"[\"OR-Tools\", \"heuristic routing\", \"TMS/WMS CRM integration\", \"Cursor IDE\", \"Zed IDE\", \"Google Antigravity\", \"Python\", \"SQL\", \"Google Cloud\", \"Docker Compose\", \"FastAPI\", \"Firebase\", \"Firestore\", \"supply chain KPI\", \"data governance\", \"data lineage\"]"`
+*(Filtrar o acortar en 3B según política JSON‑LD; el cuerpo actual nombra además inglés/avanzado y alemán — idiomas típicamente fuera `knowAbout`.)*
 
 ---
 
 ## Cuerpo propuesto página
 
-### H1 Trayectoria profesional
+**H1 en HTML:** Trayectoria profesional  
+*(Debajo cada `###` será **h2** en la plantilla salvo donde se indiquen niveles más profundos.)*
 
-*(Se usará mismo `h1` visible arriba; meta title ya suficientemente paralelo tono institucional sitio persona.)*
+*(Declaración página inicio mayo 2026: schema `Person` con `worksFor` Silodisa y `jobTitle` genérico. En **3B** conviene alinear visibles/metadata JSON‑LD con cargos, periodos Areté/Silodisa y ocupación textual del cuerpo.)*
 
-### Sección 1 — Síntesis profesional (~90 palabras)
+### Síntesis profesional
 
-El material público disponible muestra trayectoria en **investigación de operaciones aplicada**, **ingeniería de software** con foco reproducibilidad ante decisiones tácticas (rutas, inventario, KPI) y prácticas prácticamente alineadas a **OR‑Tools** según aparece texto portada mayo 2026. El mismo sitio aloja texto propio técnico (rutas, IDEs aplicados datos operativos, gobierno datos cadena suministro) junto colección institucional **Silodisa**‑origen (**Wix** migrado carpeta **`/publicaciones/wix/`**) que ilustra operaciones día a día empresa logística México sin que este borrador adjudique proyecto personal que no aparece documentado archivo propio Miguel.
+Mi trabajo se concentra en la intersección de matemáticas aplicadas, ingeniería de software y operaciones logísticas. Desde 1989 dirijo Areté Software, empresa dedicada al desarrollo de sistemas para logística y cadena de suministro. Desde 2009 opero Silodisa, organización de almacenamiento y distribución con flota refrigerada especializada en medicamentos y electrolitos. Mi formación combina ingeniería técnica, dirección empresarial e innovación organizacional, con énfasis en sistemas auditables, optimización de rutas e inventarios, y gobernanza de datos para decisiones operativas defendibles ante revisión ejecutiva.
 
-### Sección 2 — Áreas de competencia (alineadas a los «cuatro ejes» `index`)
+### Áreas de competencia técnica
 
-#### H2 Modelado matemático y optimización («Modelado y restricciones», portada index)
+#### Modelado matemático y optimización
 
-Aquí converge lo expuesto públicamente sobre formulaciones con función objetivo, restricciones y sensibilidades negocio‑ingeniería. El texto propio *[uRoutes: rutas excelentes sin pelear con el mapa…]* describe TMS con motor OR‑Tools en mensaje público de Silodisa; *[El algoritmo de la verdad…]* liga definiciones gobernadas con solidez antes de optimizar porque definiciones laxas erosionan el modelo incluso cuando el solver es potente. Enlaces canónicos a esas páginas se insertarán en la plantilla HTML en 3B.
+Formulación de problemas operativos con función objetivo y restricciones explícitas; aplicación de OR‑Tools y heurísticas de ruteo a problemas reales de cadena de suministro; análisis de sensibilidad y escenarios de estrés. La [página de proyectos](/proyectos.html) enlazará al trabajo publicado sobre uRoutes y motores de ruteo para TMS (disponible en **3B** cuando exista ese HTML).
 
-#### H2 Ingeniería de software reproducible («Software reproducible»)
+#### Ingeniería de software sobre datos trazables
 
-Construcción de código donde entradas, revisiones de código y salidas pueden reconstruirse ante revisión ingeniería. El artículo *[Cursor, Zed y Antigravity]* contrasta tres entornos con ejemplos ERP/WMS, SQL y Docker Compose, y menciona agentes Gemini en el contexto de Antigravity. La biblioteca de vídeo sobre uRoutes cita FastAPI/Firestore en los resúmenes de algunos clips: sirve como ilustración de software operativo de marca sin atribución de autoría de piezas de código individuales a personas concretas en este borrador.
+Desarrollo de sistemas reproducibles con linaje de datos, control de versiones y pruebas. Trabajo cotidiano con Python, SQL, Google Cloud, FastAPI y entornos de desarrollo asistidos por agentes (Cursor, Zed, Google Antigravity). Énfasis en arquitecturas auditables y trazables ante revisión técnica y de cumplimiento.
 
-#### H2 Inventarios, rutas y red logística (tercer eje «Inventarios, rutas y red logística», portada index)
+#### Optimización de rutas, inventarios y red logística
 
-Fuera del artículo uRoutes existe el hub visual *[Biblioteca de video uRoutes (Silodisa)]* con módulos WMS, TMS y última milla, y abundan piezas de marca sobre inventario y KPIs (serie *Más allá …* ). [PENDIENTE: el propietario indica nivel de detalle público sobre su papel frente al equipo donde el repositorio no lo diga textualmente en HTML propios.]
+Aplicación operativa de modelos sobre redes de distribución reales: ventanas de tiempo, integración TMS‑WMS‑CRM, KPIs de servicio (OTIF, POF) e inventarios bajo restricciones de servicio y costo. Contexto operativo: distribución farmacéutica con cadena de frío en Silodisa.
 
-#### H2 Datos útiles ante mesa directiva (`Datos útiles ante mesa directiva`, cuarto eje portada index)
+#### Gobernanza y calidad de datos
 
-Aquí están articulados linaje KPI/OTIF en *[El algoritmo de la verdad…]* y la guía *[Trazabilidad de datos…]*. El texto argumenta cómo ERP/WMS/TMS fragmentados producen «verdades» paralelas ante tableros. [PENDIENTE: añadir ejemplo interno sólo si se publica o autoriza después.]
+Diseño de prácticas de linaje, validación y reconciliación entre sistemas (ERP/WMS/TMS) para que los tableros directivos respondan a una sola fuente de verdad. Documentación de supuestos, criterios de aceptación y bitácora de cambios.
 
-*(Si tras revisión un eje queda sólo sostenido por blog marca y el titular quiere tono sólo autobiográfico, marcar ese eje como a reforzar con pieza nueva propia antes de publicar `trayectoria.html`.)*
+### Formación académica
 
-[PENDIENTE genérico: reforzar un eje concreto si en 3B se publican artículos firmados nuevos enlazables.]
+**Ingeniero Mecánico Electricista**, Universidad Nacional Autónoma de México (UNAM). Titulado en 1986, con cédula profesional emitida por la Dirección General de Profesiones de la Secretaría de Educación Pública.
 
----
+**Estudios completos de Maestría en Administración**, Universidad Veracruzana (1994). Programa concluido con reconocimiento al mejor desempeño académico de la generación; pendiente disertación de grado.
 
-### Sección 3 — Tecnologías y prácticas (extracto sólo desde artículos o portada revisada)
+**Programa AD‑2 de Innovación y Continuidad**, IPADE Business School, Universidad Panamericana (2012).
 
-- Aprendizaje automático mencionado a nivel conceptual de gobernabilidad (sin modelo productivo especificado).
-- Cursor, Google Antigravity y Zed (IDE/agentes aplicados según texto dedicado).
-- Docker Compose como ejemplo de reproducibilidad en integraciones locales.
-- FastAPI · Firebase/Firestore (citados leads biblioteca vídeo uRoutes).
-- Gemini (contextual a Antigravity en el mismo artículo).
-- KPIs · OTIF · POF como indicadores recorrentes marca y artículos de datos.
-- OR‑Tools.
-- Python y SQL ejemplificados desarrollo backends logística.
-- Synthesia (embeds vídeo marca).
-- Heurísticas de rutas · ventanas de tiempo · integración TMS–WMS–CRM descrita públicamente «one map» uRoutes texto propio JSON meta OR‑tools.
+**Stanford Executive Program**, Stanford Graduate School of Business (2013).
 
-No insertar tecnologías (p.ej. GraphQL, ORCID formal, MIP) hasta que una pieza futura HTML las nombre explícitamente si desea párrafo homogéneo con principio información verificada.
+### Experiencia profesional
 
----
+**Fundador y director general — Areté Software** (1989 – presente)  
+Empresa dedicada al desarrollo de software para logística y cadena de suministro.
 
-### Sección 4 — Formación académica
+**Fundador y director general — Silodisa** (2009 – presente)  
+Operación logística de almacenamiento y distribución con flota refrigerada, especializada en medicamentos y electrolitos.
 
-[PENDIENTE: el propietario debe proveer instituciones, grados años o negación exponer públicamente esa sección.]  
-*(No aparece párrafo explícito de universidad dentro HTML inventariado.)*
+**Encargado de programación de encuestas de expectativas empresariales — Instituto Nacional de Estadística, Geografía e Informática (INEGI)**  
+Diseño y desarrollo de sistemas para el levantamiento y procesamiento de encuestas económicas dirigidas al sector empresarial.
 
----
+**Director de Cómputo — Cámara de Diputados, H. Congreso de la Unión** (1985 – 1986)  
+Responsable de la infraestructura de cómputo y sistemas de información de la Cámara de Diputados.
 
-### Sección 5 — Experiencia profesional principal
+### Reconocimientos profesionales
 
-Declaración verificada por schema `Person` página inicio mayo 2026:
+**Premio Estatal de la Calidad — Gobierno del Estado de Hidalgo**  
+Otorgado a Areté Software por la implementación del Sistema Integral de Licencias de Conducir del Estado de Hidalgo, operando en todo el territorio estatal. Reconocimiento entregado entre finales de los noventa y principios de los dos mil.
 
-```json excerpt concept / not paste entire
-"worksFor": { "@id": "...#org-silodisa", "name": "Silodisa" }
-```
-Texto público página declara ocupación etiqueta profesional («Especialista en sistemas …» contenido campo `jobTitle`). **Sin fechas función, sin cargo formal exacto texto visible index además ese schema — [PENDIENTE: persona confirme título público oficial y periodos.**
+**Certificación Great Place to Work — Areté Software**  
+Reconocimiento internacional otorgado por Great Place to Work Institute a empresas con culturas organizacionales destacadas. Obtenido entre 2010 y 2015.
 
-Antecedentes empleadores anteriores: **[PENDIENTE: sólo después documentado aquí mismo o consentimiento explícito]**.
+### Idiomas
 
----
+Español (lengua materna) · Inglés (nivel avanzado) · Alemán (intermedio activo, con tres años de residencia en país de habla alemana)
 
-### Sección 6 — Publicaciones
+### Publicaciones técnicas
 
-Enlace navegacional:
-
-[Catálogo completo artículos técnicos publicados](/publicaciones.html)
+Catálogo completo de artículos técnicos publicados disponible en [Publicaciones](/publicaciones.html).
 
 ---
 
@@ -108,8 +100,10 @@ Enlace navegacional:
 
 | Pendiente editorial | Motivo |
 |---------------------|--------|
-| Formación académica | No aparece en HTML público actual del sitio. |
-| Cargo, periodos u otros empleadores | Solo consta organización Silodisa en Schema `worksFor` y texto genérico de `jobTitle` en JSON‑LD sin fechas ni historial más allá del repositorio. |
+| **Premio Estatal de la Calidad (Hidalgo)** — fechas exactas o documento público cotizable. | Narrativa provisional «finales noventa / principios dos mil» antes publicación oficial. |
+| Alinear `index`/JSON‑LD (`jobTitle`, `worksFor`, opcional segunda org Areté) con cuerpo trayectoria. | Portada aún muestra ocupación corta únicamente y `worksFor` Silodisa. |
 | Foto cabecera u otro recurso multimedia | Fuera texto existente revisado. |
+
+*(Enlace [/proyectos.html](/proyectos.html) en modelo y optimización: destino válido sólo después **3B** cuando exista el HTML proyectos.)*
 
 *(Correcciones reputacionales puntuales siguen canal dedicado `/precisiones-prensa.html`.)*
