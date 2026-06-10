@@ -393,37 +393,26 @@ def render_latest_article_home_cta() -> str:
     date = escape(a["date"])
     long_date = escape(format_long_date(f"{a['date']}T12:00:00.000Z"))
     teaser = escape(a["teaser"])
-    return f"""      <!-- LATEST-ARTICLE-CTA-START -->
-      <section
-        id="ultimo-articulo"
-        aria-labelledby="ultimo-articulo-heading"
-        class="mt-8 rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/95 via-white to-emerald-50/80 p-6 shadow-lg shadow-sky-900/10 sm:p-8 md:p-10"
-      >
-        <span
-          class="inline-block rounded-md border border-sky-200 bg-white px-2.5 py-1 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-sky-900"
-          >Última publicación</span
+    return f"""        <!-- LATEST-ARTICLE-CTA-START -->
+        <div
+          id="ultimo-articulo"
+          class="mt-8 rounded-2xl border border-sky-400/40 bg-slate-900/70 p-5 shadow-xl shadow-black/30 sm:p-6"
+          aria-labelledby="ultimo-articulo-heading"
         >
-        <h2
-          id="ultimo-articulo-heading"
-          class="mt-4 font-sans text-xl font-bold leading-snug tracking-tight text-slate-900 md:text-2xl"
-        >
-          {title}
-        </h2>
-        <p class="mt-3 font-sans text-sm text-slate-600">
-          Publicado el <time datetime="{date}">{long_date}</time>
-        </p>
-        <p class="mt-4 font-serif text-[1.02rem] leading-relaxed text-slate-800">
-          Este es mi último artículo publicado: {teaser}
-        </p>
-        <div class="mt-6 font-sans">
+          <p class="m-0 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-sky-300">
+            Última publicación · <time datetime="{date}">{long_date}</time>
+          </p>
+          <p id="ultimo-articulo-heading" class="mt-3 font-sans text-base font-semibold leading-snug text-slate-100 sm:text-lg">
+            Este es mi último artículo: {title}
+          </p>
+          <p class="mt-3 font-serif text-[0.98rem] leading-relaxed text-slate-300">{teaser}</p>
           <a
             href="{href}"
-            class="inline-flex items-center justify-center rounded-xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 no-underline"
+            class="mt-5 inline-flex items-center justify-center rounded-xl bg-sky-500 px-6 py-3 font-sans text-sm font-semibold text-white shadow-lg transition hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300 no-underline"
             >Leer mi último artículo publicado</a
           >
         </div>
-      </section>
-      <!-- LATEST-ARTICLE-CTA-END -->
+        <!-- LATEST-ARTICLE-CTA-END -->
 """
 
 
@@ -440,7 +429,7 @@ def patch_index_latest_article() -> None:
         return
     block = render_latest_article_home_cta()
     new_text, n = re.subn(
-        r"      <!-- LATEST-ARTICLE-CTA-START -->.*?      <!-- LATEST-ARTICLE-CTA-END -->\n",
+        r"        <!-- LATEST-ARTICLE-CTA-START -->.*?        <!-- LATEST-ARTICLE-CTA-END -->\n",
         block,
         text,
         count=1,
