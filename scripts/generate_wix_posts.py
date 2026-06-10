@@ -9,7 +9,8 @@ Uso (desde la raíz del repo):
   PYTHONPATH=.vendor python3 scripts/generate_wix_posts.py
 
 Actualiza también publicaciones.html (bloque <!-- PUBLICACIONES-RUBROS-START/END -->:
-contenido agrupado por rubro) y las URLs Wix en sitemap.xml
+contenido agrupado por rubro), el CTA del último artículo en index.html
+(<!-- LATEST-ARTICLE-CTA-START/END -->) y las URLs Wix en sitemap.xml
 (<!-- WIX-SITEMAP-START/END -->).
 
 Comprobación rápida de fechas JSON-LD sin regenerar HTML:
@@ -31,6 +32,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "publicaciones" / "wix"
 PUBLICACIONES_HTML = ROOT / "publicaciones.html"
+INDEX_HTML = ROOT / "index.html"
 SITEMAP_XML = ROOT / "sitemap.xml"
 VENDOR = ROOT / ".vendor"
 # Fecha de respaldo para lastmod si falta date en el manifiesto.
@@ -202,6 +204,17 @@ NATIVE_PUBLICATIONS: list[dict] = [
     },
 ]
 
+# Último artículo destacado en la portada (index.html). Actualizar al publicar uno nuevo.
+LATEST_ARTICLE: dict = {
+    "href": "/publicaciones/optimizacion-extincion-ia-logistica.html",
+    "title": "Optimización o Extinción: El Costo Inapelable de Ignorar la Inteligencia Artificial en la Logística",
+    "date": "2026-06-10",
+    "teaser": (
+        "El costo oculto de operar sin IA: rutas estáticas, inventario mal calibrado y ceguera ante disrupciones. "
+        "Por qué la optimización algorítmica ya no es opcional en cadena de suministro."
+    ),
+}
+
 
 def assert_slug_rubro_coverage() -> None:
     if set(SLUGS) != set(SLUG_RUBRO.keys()):
@@ -370,6 +383,73 @@ def render_publicaciones_por_rubro(manifest: list[dict]) -> str:
 
     lines.append("      <!-- PUBLICACIONES-RUBROS-END -->")
     return "\n".join(lines) + "\n"
+
+
+def render_latest_article_home_cta() -> str:
+    """Bloque en index.html: botón y referencia al último artículo publicado."""
+    a = LATEST_ARTICLE
+    href = escape(a["href"])
+    title = escape(a["title"])
+    date = escape(a["date"])
+    long_date = escape(format_long_date(f"{a['date']}T12:00:00.000Z"))
+    teaser = escape(a["teaser"])
+    return f"""      <!-- LATEST-ARTICLE-CTA-START -->
+      <section
+        id="ultimo-articulo"
+        aria-labelledby="ultimo-articulo-heading"
+        class="mt-8 rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/95 via-white to-emerald-50/80 p-6 shadow-lg shadow-sky-900/10 sm:p-8 md:p-10"
+      >
+        <span
+          class="inline-block rounded-md border border-sky-200 bg-white px-2.5 py-1 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-sky-900"
+          >Última publicación</span
+        >
+        <h2
+          id="ultimo-articulo-heading"
+          class="mt-4 font-sans text-xl font-bold leading-snug tracking-tight text-slate-900 md:text-2xl"
+        >
+          {title}
+        </h2>
+        <p class="mt-3 font-sans text-sm text-slate-600">
+          Publicado el <time datetime="{date}">{long_date}</time>
+        </p>
+        <p class="mt-4 font-serif text-[1.02rem] leading-relaxed text-slate-800">
+          Este es mi último artículo publicado: {teaser}
+        </p>
+        <div class="mt-6 font-sans">
+          <a
+            href="{href}"
+            class="inline-flex items-center justify-center rounded-xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 no-underline"
+            >Leer mi último artículo publicado</a
+          >
+        </div>
+      </section>
+      <!-- LATEST-ARTICLE-CTA-END -->
+"""
+
+
+def patch_index_latest_article() -> None:
+    if not INDEX_HTML.is_file():
+        print("Aviso: no existe index.html, se omite el CTA del último artículo.", file=sys.stderr)
+        return
+    text = INDEX_HTML.read_text(encoding="utf-8")
+    if "<!-- LATEST-ARTICLE-CTA-START -->" not in text:
+        print(
+            "Aviso: index.html no tiene <!-- LATEST-ARTICLE-CTA-START -->; añade los marcadores.",
+            file=sys.stderr,
+        )
+        return
+    block = render_latest_article_home_cta()
+    new_text, n = re.subn(
+        r"      <!-- LATEST-ARTICLE-CTA-START -->.*?      <!-- LATEST-ARTICLE-CTA-END -->\n",
+        block,
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if n != 1:
+        print("Aviso: no se reemplazó el bloque del último artículo en index.html.", file=sys.stderr)
+        return
+    INDEX_HTML.write_text(new_text, encoding="utf-8")
 
 
 def patch_publicaciones_rubros_section(manifest: list[dict]) -> None:
@@ -561,6 +641,7 @@ def main() -> None:
         encoding="utf-8",
     )
     patch_publicaciones_rubros_section(manifest)
+    patch_index_latest_article()
     patch_sitemap_wix_urls(manifest)
     print("Wrote", len(manifest), "files to", OUT_DIR)
 
@@ -579,11 +660,15 @@ def rebuild_publicaciones_index() -> None:
             x["rubro"] = SLUG_RUBRO[slug]
     path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     patch_publicaciones_rubros_section(manifest)
+    patch_index_latest_article()
     print("Actualizado índice por rubros en publicaciones.html y manifest.json")
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--index-only":
         rebuild_publicaciones_index()
+    elif len(sys.argv) > 1 and sys.argv[1] == "--home-latest-only":
+        patch_index_latest_article()
+        print("Actualizado CTA del último artículo en index.html")
     else:
         main()
