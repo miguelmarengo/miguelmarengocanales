@@ -178,6 +178,28 @@ NATIVE_PUBLICATIONS: list[dict] = [
         ),
         "cta": "Leer completo",
     },
+    {
+        "rubro": "tecnologia",
+        "href": "publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html",
+        "title": "El algoritmo de la verdad: por qué la gobernanza de datos es la única salvación en la logística",
+        "date": "2026-05-12",
+        "summary": (
+            "Por qué la consistencia semántica y el linaje importan más que la sofisticación del modelo: cadena de "
+            "custodia, KPI defendibles y transparencia frente a la ilusión de precisión."
+        ),
+        "cta": "Leer completo",
+    },
+    {
+        "rubro": "ai",
+        "href": "publicaciones/optimizacion-extincion-ia-logistica.html",
+        "title": "Optimización o Extinción: El Costo Inapelable de Ignorar la Inteligencia Artificial en la Logística",
+        "date": "2026-06-10",
+        "summary": (
+            "El costo oculto de operar sin IA: rutas estáticas, inventario mal calibrado y ceguera ante disrupciones. "
+            "Por qué la optimización algorítmica ya no es opcional en cadena de suministro."
+        ),
+        "cta": "Leer completo",
+    },
 ]
 
 

@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://www.miguelmarengocanales.com/publicaciones.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -51,6 +51,12 @@
   <url>
     <loc>https://www.miguelmarengocanales.com/publicaciones/algoritmo-verdad-gobernanza-datos-logistica.html</loc>
     <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.miguelmarengocanales.com/publicaciones/optimizacion-extincion-ia-logistica.html</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
