@@ -851,6 +851,43 @@ article.content p.pub-note {
   border-left: 3px solid var(--accent-border);
 }
 
+article.content table.pub-mini-table {
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+article.content table.pub-mini-table th,
+article.content table.pub-mini-table td {
+  padding: 0.65rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+article.content table.pub-mini-table thead th {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(34, 211, 238, 0.08);
+}
+
+article.content table.pub-mini-table tbody td:last-child {
+  font-family: var(--font-mono);
+  color: var(--accent-bright);
+  white-space: nowrap;
+}
+
+article.content table.pub-mini-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
 .pub-section-title {
   margin: 2rem 0 0.5rem;
   font-family: var(--font-sans);
