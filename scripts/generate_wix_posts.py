@@ -409,7 +409,7 @@ def render_latest_article_home_cta() -> str:
           <a
             href="{href}"
             class="mt-5 inline-flex items-center justify-center rounded-xl bg-sky-500 px-6 py-3 font-sans text-sm font-semibold text-white shadow-lg transition hover:bg-sky-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-300 no-underline"
-            >Leer mi último artículo publicado</a
+            >Último artículo</a
           >
         </div>
         <!-- LATEST-ARTICLE-CTA-END -->

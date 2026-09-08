@@ -131,6 +131,17 @@ body {
   color: var(--accent-bright);
 }
 
+.site-nav a.nav-cta {
+  color: #0f172a;
+  background: #0ea5e9;
+  box-shadow: 0 8px 18px rgba(14, 165, 233, 0.28);
+}
+
+.site-nav a.nav-cta:hover {
+  color: #0f172a;
+  background: #38bdf8;
+}
+
 /* ——— Contenedor ——— */
 .wrap {
   width: 100%;
@@ -830,12 +841,14 @@ a.btn-read:focus-visible {
   color: var(--muted);
 }
 
-article.content ul.pub-prose-list {
+article.content ul.pub-prose-list,
+article.content ol.pub-prose-list {
   margin: 0.75rem 0 1.25rem;
   padding-left: 1.2rem;
 }
 
-article.content ul.pub-prose-list li {
+article.content ul.pub-prose-list li,
+article.content ol.pub-prose-list li {
   margin-bottom: 0.85rem;
 }
 

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050810" />
+    <link rel="preload" href="/site.css" as="style" />
+    <meta
+      name="description"
+      content="The core bottleneck of the modern supply chain is no longer diesel or real estate: it is software friction. Why logistics needs autonomous agents—not more dashboards—and how Project Mandax replaces WMS/TMS screens with real-time optimization."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Miguel Marengo Canales" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_MX" />
+    <meta
+      property="og:title"
+      content="The Architecture of Zero Friction: Why Logistics Needs Autonomous Agents, Not More Software Screens — Miguel Marengo Canales"
+    />
+    <meta
+      property="og:description"
+      content="Project Mandax replaces rigid WMS/TMS interfaces with asynchronous cognitive channels and a multi-agent core that solves VRP and bin-packing in real time."
+    />
+    <meta property="article:published_time" content="2026-09-07" />
+    <meta property="article:modified_time" content="2026-09-07" />
+    <meta
+      property="og:url"
+      content="https://www.miguelmarengocanales.com/publicaciones/architecture-zero-friction-autonomous-agents-logistics.html"
+    />
+
+    <link
+      rel="canonical"
+      href="https://www.miguelmarengocanales.com/publicaciones/architecture-zero-friction-autonomous-agents-logistics.html"
+    />
+    <link rel="stylesheet" href="/site.css" />
+
+    <title>The Architecture of Zero Friction: Why Logistics Needs Autonomous Agents, Not More Software Screens — Miguel Marengo Canales</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "The Architecture of Zero Friction: Why Logistics Needs Autonomous Agents, Not More Software Screens",
+        "datePublished": "2026-09-07",
+        "dateModified": "2026-09-07",
+        "url": "https://www.miguelmarengocanales.com/publicaciones/architecture-zero-friction-autonomous-agents-logistics.html",
+        "inLanguage": "en",
+        "author": { "@id": "https://www.miguelmarengocanales.com/#person" },
+        "publisher": { "@id": "https://www.miguelmarengocanales.com/#person" },
+        "isPartOf": { "@id": "https://www.miguelmarengocanales.com/#website" },
+        "keywords": "Project Mandax, autonomous agents, Agentic AI, logistics, WMS, TMS, FastAPI, LangGraph, OR-Tools, vehicle routing problem, bin packing, supply chain"
+      }
+    </script>
+  </head>
+  <body class="page-publicaciones">
+    <nav class="site-nav" aria-label="Menú principal">
+      <a href="/">Inicio</a>
+      <a href="../publicaciones.html" aria-current="page">Publicaciones técnicas</a>
+      <a href="../precisiones-prensa.html">Precisiones sobre menciones en prensa</a>
+      <a href="../precisiones-prensa.html#criterios-verificacion" class="nav-muted">Criterios de análisis</a>
+    </nav>
+
+    <main class="wrap">
+      <p class="pub-back">
+        <a href="../publicaciones.html#rubro-agentic">← Índice de publicaciones técnicas (Agentic AI)</a>
+      </p>
+
+      <header class="hero pub-article-hero" id="top">
+        <p class="pill">English</p>
+        <h1>The Architecture of Zero Friction: Why Logistics Needs Autonomous Agents, Not More Software Screens</h1>
+        <p class="tagline">
+          Published <time datetime="2026-09-07">7 September 2026</time> · Miguel Marengo Canales<br />
+          CEO &amp; Lead Architect, Project Mandax · Alumni, Stanford GSB Executive Program
+        </p>
+      </header>
+
+      <article class="paper content" lang="en">
+        <p class="lead">
+          After more than three decades directing industrial operations, supply chains, and technology deployments, I
+          have observed a recurring paradox in our sector: we invest millions of dollars in physical
+          infrastructure—high-density automated warehouses, heavy transport fleets, and modern logistics parks—yet our
+          daily operations remain crippled by software friction.
+        </p>
+
+        <p>
+          We continue to force warehouse operators, dispatchers, and plant managers to interact with legacy Warehouse
+          Management Systems (WMS) and Transport Management Systems (TMS) built on rigid, multi-tabbed graphical user
+          interfaces. These systems demand extensive training, introduce human error, fragment data silos, and
+          ultimately bottleneck the physical flow of goods.
+        </p>
+
+        <p>
+          The core bottleneck of the modern supply chain is no longer diesel prices or real estate constraints;
+          <strong>it is technological friction.</strong>
+        </p>
+
+        <h2>The Fallacy of More Dashboards</h2>
+        <p>
+          For years, the software industry’s answer to complexity has been to build <em>more dashboards</em>. If an
+          operation is underperforming, the instinct is to add another reporting module, another menu to click, or
+          another analytics panel for executives to monitor after the fact.
+        </p>
+        <p>
+          On the operational floor, however, dashboards are useless. A fork-lift operator or a transport coordinator
+          does not need a complex web interface; they need immediate, accurate execution.
+        </p>
+        <p>
+          To eliminate friction, we must stop building software designed to be <em>looked at</em>, and instead build
+          systems designed to <em>act</em>.
+        </p>
+
+        <h2>Project Mandax: Moving Toward Asynchronous Cognitive Logistics</h2>
+        <p>
+          Over the past year, my engineering teams and I have focused our research and development on
+          <strong>Project Mandax</strong>: an architectural framework designed to eliminate operational screens
+          entirely.
+        </p>
+        <p>Project Mandax replaces traditional software interfaces with two foundational pillars:</p>
+        <ol class="pub-prose-list">
+          <li>
+            <strong>Asynchronous Cognitive Channels:</strong> Operators and supervisors interact with the core engine
+            through natural language via ubiquitous messaging channels (such as WhatsApp) powered by Large Language
+            Models (LLMs). There are no menus to learn, no training manuals required, and zero typing friction.
+          </li>
+          <li>
+            <strong>Autonomous Multi-Agent Orchestration:</strong> Behind the conversational layer, a multi-agent
+            system built using Python, FastAPI, and LangGraph continuously evaluates operational states, inventory
+            levels, and asset allocations.
+          </li>
+        </ol>
+
+        <h2>From Chat to Mathematics: The Core Optimization Engine</h2>
+        <p>
+          While natural language processing provides the front-end simplicity, the true power of Project Mandax lies
+          in its computational core. Artificial intelligence in supply chain management must transcend the generation
+          of text summaries; it must execute heuristic optimization mathematics directly on the operational floor.
+        </p>
+        <p>
+          By integrating <strong>Google OR-Tools</strong> into our microservices architecture, Mandax dynamically
+          solves complex mathematical formulations in real time:
+        </p>
+        <ul class="pub-prose-list">
+          <li>
+            <strong>The Vehicle Routing Problem (VRP):</strong> Continuously recalculating fleet distribution routes
+            based on live traffic, time windows, and vehicle capacity constraints.
+          </li>
+          <li>
+            <strong>Advanced Bin-Packing:</strong> Optimizing volumetric utilization inside warehouse staging zones
+            and delivery units to minimize wasted space.
+          </li>
+        </ul>
+        <p>
+          When an order changes or a truck is delayed, the system does not wait for a human to re-run a report.
+          Autonomous agents detect the variance, execute the optimization algorithms instantly, and issue direct,
+          unambiguous instructions to the right personnel.
+        </p>
+
+        <h2>The Road Ahead</h2>
+        <p>
+          Solving the supply chain challenges of the next decade requires bridging two worlds that rarely speak the
+          same language: rigorous industrial management and advanced software engineering.
+        </p>
+        <p>
+          Project Mandax is our answer to this challenge—a blueprint for a zero-friction, self-optimizing industrial
+          ecosystem. As we advance our research and stress-test these models within live enterprise environments, the
+          objective remains clear: technology should disappear into the background, leaving only pure, uninhibited
+          operational execution.
+        </p>
+
+        <p>
+          If you are an engineer, researcher, or logistics executive exploring multi-agent systems and real-time
+          optimization, I invite you to connect with me on
+          <a href="https://www.linkedin.com/in/miguel-marengo-20a393390/" rel="noopener noreferrer">LinkedIn</a>
+          to discuss the future of autonomous supply chains. You can also use the
+          <a href="../contacto.html">contact form</a>
+          on this site.
+        </p>
+
+        <p class="pub-note">
+          Related reading on this site:
+          <a href="optimizacion-extincion-ia-logistica.html">Optimización o Extinción: el costo de ignorar la IA en logística</a>
+          ·
+          <a href="uroutes-heuristica-mejores-rutas.html">uRoutes: rutas excelentes sin pelear con el mapa</a>
+          ·
+          <a href="cursor-zed-antigravity-ides-logistica.html">Cursor, Zed y Antigravity: IDEs para software de logística</a>.
+        </p>
+      </article>
+
+      <footer class="doc-foot">
+        <p>
+          <a href="../publicaciones.html">← Índice de publicaciones</a>
+          ·
+          <a href="/">Inicio</a>
+        </p>
+      </footer>
+    </main>
+    <script src="/vercel-analytics.js"></script>
+  </body>
+</html>
