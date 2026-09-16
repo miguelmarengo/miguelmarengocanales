@@ -129,7 +129,8 @@ RUBROS: list[tuple[str, str, str, str]] = [
     ("operaciones", "rubro-operaciones", "Operaciones", "Cadena de suministro, almacén, cumplimiento, mediciones y ejecución."),
     ("tecnologia", "rubro-tecnologia", "Tecnología", "Sistemas, datos, plataformas y tendencias digitales."),
     ("ai", "rubro-ai", "Inteligencia artificial (IA)", "IA aplicada, optimización y algoritmos en contexto operativo."),
-    ("agentic", "rubro-agentic", "Agentic AI", "Agentes autónomos, orquestación y flujos agentic (contenido en expansión)."),
+    ("agentic", "rubro-agentic", "Agentic AI", "Agentes autónomos, orquestación y flujos agentic."),
+    ("english", "rubro-ingles", "Inglés", "Artículos escritos en inglés."),
 ]
 
 # Publicaciones alojadas en este sitio (no Wix), con rubro y ficha para la portada de publicaciones.
@@ -216,6 +217,7 @@ NATIVE_PUBLICATIONS: list[dict] = [
     },
     {
         "rubro": "agentic",
+        "rubros": ["agentic", "english"],
         "href": "publicaciones/architecture-zero-friction-autonomous-agents-logistics.html",
         "title": "The Architecture of Zero Friction: Why Logistics Needs Autonomous Agents, Not More Software Screens",
         "date": "2026-09-07",
@@ -228,6 +230,7 @@ NATIVE_PUBLICATIONS: list[dict] = [
     },
     {
         "rubro": "agentic",
+        "rubros": ["agentic", "english"],
         "href": "publicaciones/ai-org-chart-make-room-for-the-bot.html",
         "title": "AI in the Org Chart is Essential for New Companies: Make Room for the Bot!",
         "date": "2026-09-16",
@@ -364,7 +367,11 @@ def render_publicaciones_por_rubro(manifest: list[dict]) -> str:
         wix_by[r].append(x)
     natives_by: dict[str, list[dict]] = {k: [] for k, _, _, _ in RUBROS}
     for n in NATIVE_PUBLICATIONS:
-        natives_by[n["rubro"]].append(n)
+        keys = n.get("rubros") or [n["rubro"]]
+        for key in keys:
+            if key not in natives_by:
+                raise RuntimeError(f"Rubro desconocido en NATIVE_PUBLICATIONS: {key!r} ({n.get('href')})")
+            natives_by[key].append(n)
 
     lines: list[str] = ["      <!-- PUBLICACIONES-RUBROS-START -->"]
 
