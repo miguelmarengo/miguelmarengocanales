@@ -202,16 +202,53 @@ NATIVE_PUBLICATIONS: list[dict] = [
         ),
         "cta": "Leer completo",
     },
+    {
+        "rubro": "operaciones",
+        "href": "publicaciones/tercerizacion-logistica-otif-silodisa.html",
+        "title": "Tercerizar la logística ya no es opcional: la matemática que protege tu margen",
+        "date": "2026-07-16",
+        "summary": (
+            "Costos logísticos de hasta 32% del valor del producto, multas OTIF del 3% por incumplimiento y la "
+            "diferencia real entre un transportista y un socio 3PL/4PL con infraestructura y tecnología propia — "
+            "el caso Silodisa/uRoutes."
+        ),
+        "cta": "Leer completo",
+    },
+    {
+        "rubro": "agentic",
+        "href": "publicaciones/architecture-zero-friction-autonomous-agents-logistics.html",
+        "title": "The Architecture of Zero Friction: Why Logistics Needs Autonomous Agents, Not More Software Screens",
+        "date": "2026-09-07",
+        "summary": (
+            "Artículo en inglés. Project Mandax sustituye pantallas de WMS/TMS por canales cognitivos asíncronos y "
+            "un núcleo multi-agente (Python, FastAPI, LangGraph, OR-Tools) que resuelve VRP y bin-packing en tiempo "
+            "real. El cuello de botella ya no es el diésel: es la fricción tecnológica."
+        ),
+        "cta": "Leer completo",
+    },
+    {
+        "rubro": "agentic",
+        "href": "publicaciones/ai-org-chart-make-room-for-the-bot.html",
+        "title": "AI in the Org Chart is Essential for New Companies: Make Room for the Bot!",
+        "date": "2026-09-16",
+        "summary": (
+            "Artículo en inglés. La IA deja de ser una herramienta de TI y entra al organigrama como colega: agente de "
+            "QA y procesos, y agente de agenda tipo Chief of Staff. Casos: Klarna en servicio al cliente y bots de "
+            "coordinación en startups."
+        ),
+        "cta": "Leer completo",
+    },
 ]
 
 # Último artículo destacado en la portada (index.html). Actualizar al publicar uno nuevo.
 LATEST_ARTICLE: dict = {
-    "href": "/publicaciones/optimizacion-extincion-ia-logistica.html",
-    "title": "Optimización o Extinción: El Costo Inapelable de Ignorar la Inteligencia Artificial en la Logística",
-    "date": "2026-06-10",
+    "href": "/publicaciones/ai-org-chart-make-room-for-the-bot.html",
+    "title": "AI in the Org Chart is Essential for New Companies: Make Room for the Bot!",
+    "date": "2026-09-16",
     "teaser": (
-        "El costo oculto de operar sin IA: rutas estáticas, inventario mal calibrado y ceguera ante disrupciones. "
-        "Por qué la optimización algorítmica ya no es opcional en cadena de suministro."
+        "Si escalas una empresa hoy, el organigrama ya no está completo solo con personas: hace falta incluir agentes "
+        "autónomos con descripción de puesto. El supervisor de QA que no duerme y el jefe de staff que agenda sin "
+        "emails eternos."
     ),
 }
 
