@@ -1151,3 +1151,272 @@ a.btn-read--ghost:hover {
 .page-proyectos .proj-material-item a:hover {
   color: var(--accent-hover);
 }
+
+/* ——— Portada: IA en el ADN / org chart ——— */
+.dna-panel {
+  margin-top: 2rem;
+  padding: 1.5rem 1.15rem 1.75rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(34, 211, 238, 0.55);
+  background:
+    radial-gradient(ellipse 80% 50% at 0% 0%, rgba(34, 211, 238, 0.18), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 100% 100%, rgba(167, 139, 250, 0.16), transparent 50%),
+    linear-gradient(165deg, #0c1730 0%, #07101f 100%);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(34, 211, 238, 0.12);
+}
+
+@media (min-width: 640px) {
+  .dna-panel {
+    padding: 1.85rem 1.75rem 2rem;
+  }
+}
+
+.dna-panel .pill {
+  margin: 0;
+}
+
+.dna-panel h2 {
+  margin: 0.85rem 0 0.35rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1.45rem, 3.4vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #f8fafc;
+}
+
+.dna-en-lead {
+  margin: 0 0 1.1rem;
+  font-family: var(--font-sans);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--accent-bright);
+}
+
+.dna-copy {
+  margin: 0 0 0.85rem;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.dna-copy strong {
+  color: #f8fafc;
+  font-weight: 650;
+}
+
+.dna-copy[lang="en"] {
+  font-size: 0.98rem;
+  color: #cbd5e1;
+}
+
+.org-tree {
+  margin: 1.35rem 0 1.5rem;
+  padding: 1.1rem 0.75rem 1.2rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(2, 6, 18, 0.45);
+}
+
+.org-tree-caption {
+  margin: 0 0 0.9rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-dim);
+}
+
+.org-node {
+  list-style: none;
+  margin: 0 auto;
+  max-width: 22rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.org-node p {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.org-node strong {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.org-node--human {
+  border: 1px solid rgba(226, 232, 240, 0.4);
+  background: #1e293b;
+}
+
+.org-node--ai {
+  border: 1px solid rgba(34, 211, 238, 0.55);
+  background: #083344;
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.12);
+}
+
+.org-badge {
+  display: inline-block;
+  margin-bottom: 0.28rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.org-badge--human {
+  color: #e2e8f0;
+  background: rgba(148, 163, 184, 0.18);
+}
+
+.org-badge--ai {
+  color: #a5f3fc;
+  background: rgba(34, 211, 238, 0.16);
+}
+
+.org-stem,
+.org-bar {
+  margin: 0 auto;
+  background: rgba(34, 211, 238, 0.45);
+}
+
+.org-stem {
+  width: 2px;
+  height: 1rem;
+}
+
+.org-bar {
+  width: min(86%, 36rem);
+  height: 2px;
+}
+
+.org-agents {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.85rem 0.4rem 0;
+  list-style: none;
+}
+
+.org-agents .org-node {
+  max-width: none;
+  position: relative;
+}
+
+.org-agents .org-node::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -0.85rem;
+  width: 2px;
+  height: 0.85rem;
+  background: rgba(34, 211, 238, 0.4);
+  transform: translateX(-50%);
+}
+
+@media (min-width: 700px) {
+  .org-agents {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.agent-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .agent-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.agent-card {
+  margin: 0;
+  padding: 0.95rem 0.95rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(34, 211, 238, 0.28);
+  background: #0f172a;
+}
+
+.agent-card h3 {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.agent-card .en {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-bright);
+}
+
+.agent-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.dna-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.25rem 0 0;
+}
+
+.dna-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.05rem;
+  border-radius: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.dna-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.dna-links .primary {
+  color: #04131a;
+  background: var(--accent);
+}
+
+.dna-links .primary:hover {
+  background: var(--accent-hover);
+}
+
+.dna-links .ghost {
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.dna-links .ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
